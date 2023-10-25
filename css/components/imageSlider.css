@@ -1,0 +1,51 @@
+.image-slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image__ic-left {
+  background: url("/assets/ic_scroll_left.svg");
+  width: 20px;
+  height: 38px;
+}
+
+.image__ic-right {
+  background: url("/assets/ic_scroll_right.svg");
+  width: 18px;
+  height: 38px;
+}
+
+.image__round-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10000;
+  top: -50px;
+  gap: 50px;
+}
+
+.image__ic-round-fill {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.image__ic-round-outline {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.image__ic-round-outline:hover {
+  transition: all;
+  transition-duration: 0.5s;
+  background-color: white;
+  border: none;
+}
