@@ -9,18 +9,27 @@
 }
 
 nav{
-    background-color: #333;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     color: var(--font-color);
+    opacity: 100;
 }
 
 .navbar-logo{
     width: 50px;
+    margin-right: 20px;
 }
-
+.navbar-menu{
+    list-style: none;
+    display: flex;
+}
 .navbar-menu a{
     color: var(--font-color);
     text-decoration: none;
@@ -33,11 +42,6 @@ nav{
     margin-right: 10px;
     font-weight: 600;
     cursor: pointer;
-}
-
-.navbar-menu{
-    list-style: none;
-    display: flex;
 }
 
 .navbar-menu li{
@@ -57,31 +61,44 @@ nav{
     margin: 4px 0;
 }
 
-/* responsive */
-@media screen and (max-width: 768px){
-    .navbar-menu{
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 0;
-    }
-    .navbar-menu.active {
-        display: flex;
-    }
+.pages-1{
+    background-image: url('../assets/img/background.png');
+    padding-top: 80px;
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .navbar-menu li {
-        margin: 0;
-        padding: 10px 20px;
-        width: 100%;
-        text-align: center;
-    }
+.pages-1-sub-title{
+    padding: 30px 0 ;
+    color: var(--font-color);
+}
+.pages-1-title{
+    color: var(--font-color);
+    font-size: 4rem;
+}
 
-    .navbar-hamburger {
-        display: flex;
-    }
+.button-pages-1{
+    text-align: center;
+    border-radius: 0.25rem;
+    background: linear-gradient(195deg, #FFB548 11.27%, #F3AF34 90.4%);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.text-scroll-pages-1{
+    margin-top: 20rem;
+    margin-bottom: 5px;
+    color: var(--font-color);
+    font-size: 16px;
 }
 
