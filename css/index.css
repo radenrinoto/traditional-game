@@ -3,4 +3,50 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ic-round-fill {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.ic-round-outline {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 400;
+  color: white;
+}
+
+.desc {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+.title-secondary {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffb548;
+}
+
+.desc-secondary {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
 }

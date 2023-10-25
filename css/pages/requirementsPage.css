@@ -1,0 +1,45 @@
+.page-requirements {
+  background-image: url("/assets/bg_requirements_page.svg");
+  background-size: cover;
+  background-position: center;
+  height: 960px;
+}
+
+.page-requirements__run-computer {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding-top: 150px;
+}
+
+.page-requirements__container {
+  margin-top: 50px;
+  padding-left: 130px;
+}
+
+.page-requirements__table {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 87px;
+}
+
+.page-requirements__table-title {
+  margin-bottom: 10px;
+}
+
+.page-requirements__table-card-container {
+  display: flex;
+}
+
+.page-requirements__table-card {
+  border: 1px solid white;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.page-requirements__table-card-bottom {
+  border: 1px solid white;
+  width: 100%;
+  padding: 15px 20px;
+}

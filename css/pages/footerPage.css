@@ -1,0 +1,34 @@
+.page-footer {
+  background: url("/assets/bg_newsletter_page.svg");
+  height: fit-content;
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.page-footer__links {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.page-footer__link-list {
+  display: flex;
+  gap: 50px;
+}
+
+.page-footer__link {
+  color: white;
+  cursor: pointer;
+}
+
+.page-footer__credits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.page-footer__credit {
+  font-weight: 200;
+  color: gray;
+}

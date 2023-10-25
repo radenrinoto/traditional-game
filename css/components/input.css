@@ -1,0 +1,11 @@
+.custom-input {
+  background-color: transparent;
+  border: none;
+  color: #ffb548;
+}
+
+.custom-input:focus {
+  outline: none;
+  border: none;
+  caret-color: #ffb548;
+}

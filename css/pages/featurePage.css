@@ -1,0 +1,44 @@
+.page-feature {
+  background: url("/assets/bg_feature_page.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 960px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-top: -2px;
+}
+
+.page-feature__title {
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.page-feature__desc {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.page-feature__container {
+  width: 40%;
+}
+
+.page-feature__body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.page-feature__body-container {
+  display: flex;
+  gap: 30px;
+}
+
+.page-feature__body-title {
+  color: #ffb548;
+  margin-top: -5px;
+}

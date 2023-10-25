@@ -1,0 +1,41 @@
+.page-newsletter {
+  background: url("/assets/bg_newsletter_page.svg");
+  background-size: cover;
+  background-position: center;
+  height: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 120px;
+}
+
+.page-newsletter__right {
+}
+
+.page-newsletter__img {
+  width: 445.47px;
+  height: 694.41px;
+}
+
+.page-newsletter__input-label {
+  font-size: 12px;
+  color: gray;
+}
+
+.page-newsletter__input {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: rgb(48, 48, 48);
+  width: 380px;
+}
+
+.page-newsletter__input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}

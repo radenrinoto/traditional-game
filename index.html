@@ -7,21 +7,34 @@
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="css/components/navbar.css" />
     <link rel="stylesheet" href="css/components/button.css" />
+    <link rel="stylesheet" href="css/components/input.css" />
     <link rel="stylesheet" href="css/components/imageSlider.css" />
     <!-- PAGES -->
     <link rel="stylesheet" href="css/pages/landingPage.css" />
-    <link rel="stylesheet" href="css/pages//aboutPage.css" />
+    <link rel="stylesheet" href="css/pages/aboutPage.css" />
+    <link rel="stylesheet" href="css/pages/featurePage.css" />
+    <link rel="stylesheet" href="css/pages/requirementsPage.css" />
+    <link rel="stylesheet" href="css/pages/quotesPage.css" />
+    <link rel="stylesheet" href="css/pages/newsletterPage.css" />
+    <link rel="stylesheet" href="css/pages/footerPage.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>EXERCISE FIGMA</title>
   </head>
   <body>
     <nav class="navbar">
       <h1>LOGO</h1>
       <div class="navbar-list">
-        <a href="" class="navbar-list__link">HOME</a>
-        <a href="" class="navbar-list__link">WORK</a>
-        <a href="" class="navbar-list__link">CONTACT</a>
-        <a href="" class="navbar-list__link">ABOUT ME</a>
+        <a href="#home" class="navbar-list__link">HOME</a>
+        <a href="#work" class="navbar-list__link">WORK</a>
+        <a href="#feature" class="navbar-list__link">CONTACT</a>
+        <a href="#newsletter" class="navbar-list__link">ABOUT ME</a>
       </div>
       <div class="navbar-list">
         <a href="" class="navbar-list__link">SIGN UP</a>
@@ -29,21 +42,23 @@
       </div>
     </nav>
     <!-- LANDING PAGE -->
-    <div class="page-landing__head">
+    <div id="home" class="page-landing__head">
       <div class="page-landing__head-container">
         <h1 class="page-landing__head-title">PLAY TRADITIONAL GAME</h1>
         <h3 class="page-landing__head-desc">Experience new traditional game play</h3>
         <button class="btn-primary">PLAY NOW</button>
         <div class="page-landing__head-scroll-container">
-          <p>THE STORY</p>
-          <div>
-            <img src="/assets/ic_scroll_down.svg" />
-          </div>
+          <a href="#work">
+            <p class="desc-secondary">THE STORY</p>
+            <div>
+              <img src="/assets/ic_scroll_down.svg" />
+            </div>
+          </a>
         </div>
       </div>
     </div>
     <!-- THE GAMES PAGE -->
-    <div class="page-about">
+    <div id="work" class="page-about">
       <div class="page-about__container">
         <div class="page-about__left">
           <h3 class="page-about__left-desc">What's so special?</h3>
@@ -65,6 +80,201 @@
             <div class="image__ic-right"></div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- FEATURE PAGE -->
+    <div id="feature" class="page-feature">
+      <div class="page-feature__container">
+        <div class="page-feature__head">
+          <h3 class="page-feature__desc">What's so special?</h3>
+          <h1 class="page-feature__title">FEATURES</h1>
+        </div>
+        <div class="page-feature__body">
+          <div class="page-feature__body-container">
+            <div class="ic-round-fill"></div>
+            <div class="page-feature__body-head">
+              <h3 class="page-feature__body-title">TRADITIONAL GAMES</h3>
+              <p>If you miss your childhood, we provide many traditional games here</p>
+            </div>
+          </div>
+
+          <div class="page-feature__body-container">
+            <div class="ic-round-outline"></div>
+            <div class="page-feature__body-head">
+              <h3 class="page-feature__body-title">GAME SUIT</h3>
+            </div>
+          </div>
+
+          <div class="page-feature__body-container">
+            <div class="ic-round-outline"></div>
+            <div class="page-feature__body-head">
+              <h3 class="page-feature__body-title">TBD</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- REQUIREMENTS PAGE -->
+    <div class="page-requirements">
+      <p class="page-requirements__run-computer">Can My Computer Run this game?</p>
+      <div class="page-requirements__container">
+        <h1 class="page-requirements__title title">
+          SYSTEM<br />
+          REQUIREMENTS
+        </h1>
+        <div class="page-requirements__table">
+          <!-- CARD CONTAINER -->
+          <div class="page-requirements__table-card-container">
+            <div class="page-requirements__table-card">
+              <h1 class="page-requirements__table-title title-secondary">OS:</h1>
+              <p class="page-requirements__table-desc desc-secondary">
+                Windows 7 64-bit only (No OSX support at this time)
+              </p>
+            </div>
+
+            <div class="page-requirements__table-card">
+              <h1 class="page-requirements__table-title title-secondary">PROCESSOR:</h1>
+              <p class="page-requirements__table-desc desc-secondary">
+                Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+              </p>
+            </div>
+          </div>
+          <!-- CARD CONTAINER -->
+          <div class="page-requirements__table-card-container">
+            <div class="page-requirements__table-card">
+              <h1 class="page-requirements__table-title title-secondary">MEMORY:</h1>
+              <p class="page-requirements__table-desc desc-secondary">4 GB RAM</p>
+            </div>
+
+            <div class="page-requirements__table-card">
+              <h1 class="page-requirements__table-title title-secondary">STORAGE:</h1>
+              <p class="page-requirements__table-desc desc-secondary">8 GB available space</p>
+            </div>
+          </div>
+          <!-- CARD CONTAINER -->
+          <div class="page-requirements__table-card-container">
+            <div class="page-requirements__table-card-bottom">
+              <h1 class="page-requirements__table-title title-secondary">GRAPHICS:</h1>
+              <p class="page-requirements__table-desc desc-secondary">
+                NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUOTES PAGE -->
+    <div class="page-quotes">
+      <div class="page-quotes__left">
+        <div></div>
+        <h1 class="page-quotes__title title">TOP SCORES</h1>
+        <p class="page-quotes__desc desc-secondary">
+          This top score from various games provided<br />
+          on this platform
+        </p>
+        <button class="btn-primary">see more</button>
+      </div>
+      <div class="page-quotes__right">
+        <!-- card quotes -->
+        <div class="page-quotes__card-quotes">
+          <div class="page-quotes__card-container">
+            <div class="page-quotes__card-profile">
+              <img src="/assets/profile_evan.jpg" class="page-quotes__card-img" />
+              <div class="page-quotes__card-header">
+                <h1 class="page-quotes__card-title title-secondary">Evan Lathi</h1>
+                <h1 class="page-quotes__card-desc desc-secondary">PC Gamer</h1>
+              </div>
+            </div>
+            <img src="/assets/ic_twitter.svg" alt="twitter logo" class="ic-twitter" />
+          </div>
+          <p class="desc-secondary">“One of my gaming highlights of the year.”</p>
+          <p class="page-quotes__date desc-secondary">June 18, 2021</p>
+        </div>
+
+        <!-- card quotes middle -->
+        <div class="page-quotes__card-quotes-middle">
+          <div class="page-quotes__card-container">
+            <div class="page-quotes__card-profile">
+              <img src="/assets/profile_jada.jpg" class="page-quotes__card-img" />
+              <div class="page-quotes__card-header">
+                <h1 class="page-quotes__card-title title-secondary">Jada Griffin</h1>
+                <h1 class="page-quotes__card-desc desc-secondary">Nerdreactor</h1>
+              </div>
+            </div>
+            <img src="/assets/ic_twitter.svg" alt="twitter logo" class="ic-twitter" />
+          </div>
+          <p class="desc-secondary">
+            “The next big thing in the world of streaming and survival games.”
+          </p>
+          <p class="page-quotes__date desc-secondary">July 10, 2021</p>
+        </div>
+
+        <!-- card quotes -->
+        <div class="page-quotes__card-quotes">
+          <div class="page-quotes__card-container">
+            <div class="page-quotes__card-profile">
+              <img src="/assets/profile_niga.jpg" class="page-quotes__card-img" />
+              <div class="page-quotes__card-header">
+                <h1 class="page-quotes__card-title title-secondary">Aarons Williams</h1>
+                <h1 class="page-quotes__card-desc desc-secondary">Uproxx</h1>
+              </div>
+            </div>
+            <img src="/assets/ic_twitter.svg" alt="twitter logo" class="ic-twitter" />
+          </div>
+          <p class="desc-secondary">
+            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+          </p>
+          <p class="page-quotes__date desc-secondary">December 24, 2018</p>
+        </div>
+      </div>
+    </div>
+    <!-- NEWSLATER PAGE -->
+    <div id="newsletter" class="page-newsletter">
+      <img src="/assets/skeleton_mask.svg" class="page-newsletter__img" />
+      <div class="page-newsletter__right">
+        <h3 class="desc">
+          Want to stay in<br />
+          touch ?
+        </h3>
+        <h1 class="title">
+          NEWSLETTER<br />
+          SUBSCRIBE
+        </h1>
+        <p class="page-newsletter__desc-secondary desc-secondary">
+          In order to start receiving our news, all you have to do is enter your email address.
+          Everything else will be taken care of by us. We will send you emails containing
+          information about game. We don’t spam.
+        </p>
+        <div class="page-newsletter__input-container">
+          <div class="page-newsletter__input">
+            <label class="page-newsletter__input-label">Your email address</label>
+            <input class="custom-input" />
+          </div>
+          <button class="btn-primary">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="page-footer">
+      <div class="page-footer__links">
+        <div class="page-footer__link-list">
+          <a class="page-footer__link">MAIN</a>
+          <a class="page-footer__link">ABOUT</a>
+          <a class="page-footer__link">GAME FEATURES</a>
+          <a class="page-footer__link">SYSTEM REQUIREMENTS</a>
+          <a class="page-footer__link">QUOTES</a>
+        </div>
+        <div class="page-footer__link-list">
+          <img src="/assets/ic-facebook.svg" class="page-footer__link" />
+          <img src="/assets/ic-twitter2.svg" class="page-footer__link" />
+          <img src="/assets/ic-youtube.svg" class="page-footer__link" />
+          <img src="/assets/ic-twitch.svg" class="page-footer__link" />
+        </div>
+      </div>
+      <hr />
+      <div class="page-footer__credits">
+        <p class="page-footer__credit">© 2018 Your Games, Inc. All Rights Reserved</p>
+        <p class="desc-secondary">Privacy Policy | Terms of Services | Code of Conduct</p>
       </div>
     </div>
   </body>

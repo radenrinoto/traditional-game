@@ -1,0 +1,70 @@
+.page-quotes {
+  background: url("/assets/bg_quotes_page.jpg");
+  background-position: right;
+  background-size: cover;
+  background-color: black;
+  margin-left: 0px;
+  height: 960px;
+  width: 100%;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-quotes__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.page-quotes__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.page-quotes__card-quotes {
+  width: 452px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(49, 49, 49);
+}
+
+.page-quotes__card-quotes-middle {
+  margin-right: 200px;
+  width: 452px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(49, 49, 49);
+}
+
+.page-quotes__card-img {
+  border-radius: 100%;
+  box-shadow: 10px 4px 0px rgba(255, 181, 72, 1);
+  width: 66px;
+}
+
+.page-quotes__card-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.page-quotes__card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.page-quotes__card-title {
+  margin-bottom: -5px;
+}
+
+.page-quotes__card-desc {
+  color: gray;
+}
+
+.page-quotes__date {
+  color: gray;
+  margin-top: 10px;
+}
