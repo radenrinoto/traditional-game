@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: 0;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white: #fff;
+    --yellow-color: #FFB548;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navigation Header */
+.header {
+    width: 1440px;
+    height: 90px;
+    position: fixed;
+    background-color: red;
+}
+
+.header.logo {
+    color: var(--white);
+    font-family: Open Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 120px 6% 60px;
+}
+
+/* Section 1 */
+.section1 {
+    display: flex;
+    justify-content: center;
+    background-image: url('assets/bg-image1.png');
+    width: 1280px;
+    height: 800px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1 .section1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+}
+
+.section1 .section1-content h1 {
+    color: var(--white);
+    text-align: center;
+    font-family: Arial;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 280px;
+}
+
+.section1 .section1-content h3 {
+    color: var(--white);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+.section1 .section1-content .btn {
+    width: 260px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow-color);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.section1 .section1-content .btn .btn-play {
+    background: none;
+    color: #1A1917;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.section1 .section1-content .scroll-down {
+    text-align: center;
+    color: var(--white);
+}
+
+.section1 .section1-content .scroll-down p {
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    padding-top: 220px;
+    text-transform: uppercase;
+}
+
+/* Section 2 */
+.section2 {
+    display: flex;
+    background-image: url('assets/bg-image2.png');
+    width: 1280px;
+    height: 800px;
+    margin-top: -0.5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 .section2-content {
+    display: flex;
+}
+
+.section2 .section2-content .title {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin-top: 273px;
+    margin-left: 83px;
+}
+
+.section2 .section2-content .title h3 {
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.section2 .section2-content .title h1 {
+    font-family: Arial;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section2 .section2-content .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    padding-top: 100px;
+}
+
+.section2 .section2-content .carousel img {
+    width: 650px;
+    height: 300px;
+}
+
+/* Section 3 */
+.section3 {
+    display: flex;
+    justify-content: center;
+    background-image: url('assets/bg-image3.png');
+    width: 1280px;
+    height: 800px;
+    margin-top: -1px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3 .section3-content .title {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+    padding-left: 480px;
+}
+
+.section3 .section3-content .title h3 {
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.section3 .section3-content .title h1 {
+    font-family: Arial;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section3 .section3-content .title .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.section3 .section3-content .title .info .icon1 {
+    display: flex;
+}
+
+.section3 .section3-content .title .info .icon1 .theme {
+    margin-left: 30px;
+}
+
+.section3 .section3-content .title .info .icon1 .theme h1 {
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.section3 .section3-content .title .info .icon1 .theme p {
+    color: var(--white);
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.section3 .section3-content .title .info .icon2 {
+    display: flex;
+}
+
+.section3 .section3-content .title .info .icon2 .theme {
+    margin-left: 30px;
+}
+
+.section3 .section3-content .title .info .icon2 .theme h1 {
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.section3 .section3-content .title .info .icon2 .theme p {
+    color: var(--white);
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.section3 .section3-content .title .info .icon3 {
+    display: flex;
+    margin-top: 40px;
+}
+
+.section3 .section3-content .title .info .icon3 .theme {
+    margin-left: 30px;
+}
+
+.section3 .section3-content .title .info .icon3 .theme h1 {
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.section3 .section3-content .title .info .icon3 .theme p {
+    color: var(--white);
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+/* Section 4 */
+.section4 {
+    align-items: center;
+    background-image: url('assets/bg-image4.png');
+    color: var(--white);
+    width: 1280px;
+    height: 800px;
+    margin-top: -1px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4 .section4-content {
+    padding-top: 140px;
+}
+
+.section4 .section4-content .head p {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.section4 .section4-content .body {
+    padding-left: 70px;
+    max-width: 100px;
+}
+
+.section4 .section4-content .body .body-content h1 {
+    font-family: Arial;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-top: 54px;
+}
+
+.section4 .section4-content .body .spesification {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.section4 .section4-content .body .spesification>div {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.section4 .section4-content .body .spesification .grid {
+    border: 1px solid var(--white);
+    padding: 10px;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.item1 h1,
+.item2 h1,
+.item3 h1,
+.item4 h1,
+.item5 h1 {
+    color: var(--yellow-color);
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    padding-bottom: 6px;
+}
+
+.item1 p,
+.item2 p,
+.item3 p,
+.item4 p,
+.item5 p {
+    color: var(--white);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+.item5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Top Scores */
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/bg-image5.png');
+    width: 1280px;
+    height: 800px;
+    margin-top: -1px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.score .score-content {
+    display: flex;
+}
+
+.score .score-content .left h1 {
+    color: var(--white);
+    font-family: Arial;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.score .score-content .left p {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.score .score-content .left .btn {
+    width: 260px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow-color);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.score .score-content .left .btn .btn-see {
+    background: none;
+    color: #1A1917;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.score .score-content .right .card1,
+.score .score-content .right .card2,
+.score .score-content .right .card3 {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.score .score-content .right .card1 .head,
+.score .score-content .right .card2 .head,
+.score .score-content .right .card3 .head {
+    display: flex;
+    padding-bottom: 22px;
+}
+
+.score .score-content .right .card1 .head img,
+.score .score-content .right .card2 .head img,
+.score .score-content .right .card3 .head img {
+    width: 70px;
+}
+
+.score .score-content .right .card1 .head .head-content,
+.score .score-content .right .card2 .head .head-content,
+.score .score-content .right .card3 .head .head-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 22px;
+    padding-right: 76px;
+}
+
+.score .score-content .right .card1 .head .twitter,
+.score .score-content .right .card2 .head .twitter,
+.score .score-content .right .card3 .head .twitter {
+    margin-top: 10px;
+}
+
+.score .score-content .right .card1 .head .head-content h1,
+.score .score-content .right .card2 .head .head-content h1,
+.score .score-content .right .card3 .head .head-content h1 {
+    color: var(--yellow-color);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.score .score-content .right .card1 .head .head-content p,
+.score .score-content .right .card2 .head .head-content p,
+.score .score-content .right .card3 .head .head-content p {
+    color: var(--white);
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 0.5;
+}
+
+.score .score-content .right .card1 .body .title1,
+.score .score-content .right .card2 .body .title1,
+.score .score-content .right .card3 .body .title1 {
+    color: var(--white);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.score .score-content .right .card1 .body .title2,
+.score .score-content .right .card2 .body .title2,
+.score .score-content .right .card3 .body .title2 {
+    color: var(--white);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
