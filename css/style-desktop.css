@@ -64,8 +64,8 @@ nav{
 .pages-1{
     background-image: url('../assets/img/background.png');
     padding-top: 80px;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    /* background-position: center; */
     height: 740px;
     display: flex;
     flex-direction: column;
@@ -101,4 +101,513 @@ nav{
     color: var(--font-color);
     font-size: 16px;
 }
+
+.pages-2{
+    margin-top: -2px;
+    background-image: url('../assets/img/bg2.png');
+    height: 740px;
+    display: flex;
+    flex-direction: row;
+    color: var(--font-color);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pages-2-left{
+    padding-left: 100px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto -10px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slider {
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    max-height: 3000px; 
+}
+
+
+button.nextslide,button.prevslide {
+    position: absolute;
+    border-radius: 50px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    padding:5px;
+    margin:10px;
+    transition: color 0.3s;
+    top: 50%;
+    transform: translateY(-43%);
+  
+}
+
+button.right{
+right: 0;
+}
+
+button.nextslide:focus,button.prevslide:focus {
+    outline: none;
+}
+
+button.nextslide:hover,button.prevslide:hover {
+    color: #007bff;
+}
+button.nextslide svg,button.prevslide svg{
+width:30px;
+height:30px
+}
+
+
+/* pages 3  */
+/* .pages-3{
+    margin-top: -2px;
+    background-image: url('../assets/img/bg3.png');
+    background-size: 100% 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    align-items: center;
+    line-height: 1.5;
+}
+
+.pages-3-content{
+    margin-left: 300px;
+}
+
+.pages-3-content h1{
+    font-size: 100px;
+    margin-top: -40px;
+}
+
+.pages-3-content h4{
+    font-size: 30px;
+} */
+
+.pages-3{
+    margin-top: -2px;
+    background-image: url('../assets/img/bg3.png');
+    background-size: 100% 100%;
+    height: 54.39138rem;
+    border: none;
+    color: var(--font-color);
+}
+
+.pages-3-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 50%;
+    float: right;
+    margin-right: 15rem;
+    margin-top: 11rem;
+}
+
+.pages-3-text{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.12rem;
+}
+
+.pages-3-title{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.pages-3-timeline{
+    position: relative;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pages-3-timeline::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background: white;
+    left: 3px;
+    margin-top: 0.25rem;
+}
+
+.pages-3-timeline-text{
+    margin-bottom: 1rem;
+}
+
+.pages-3-timeline-title{
+    color: #FFB548;
+    text-align: center;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.pages-3-timeline-title::before{
+    content: "";
+    position: absolute;
+    background-color: var(--font-color);
+    border-radius: 9999px;
+    width: 10px;
+    height: 10px;
+    left: -1px;
+    margin-top: 0.25rem;
+    z-index: 999;
+}
+
+.pages-3-timeline-title-2{
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.pages-3-timeline-title-2::before{
+    content: "";
+    position: absolute;
+    border-radius: 9999px;
+    width: 10px;
+    height: 10px;
+    left: -2px;
+    margin-top: 0.5rem;
+    z-index: 999;
+    border: 2px solid white;
+}
+
+.pages-3-timeline-desc{
+    color: #FFF;
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+    width: 22.65756rem;
+    height: 4.8565rem;
+    flex-shrink: 0;
+}
+
+/* pages 4 */
+
+.pages-4{
+    background-image: url('../assets/img/bg4.png');
+    margin-top: -2px;
+    background-size: 100% 100%;
+    height: 60.00988rem;
+    flex-shrink: 0;
+    border: none;
+    color: var(--font-color);
+}
+
+.pages-4-text-1{
+    height: 1.72956rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 9.08rem;
+    margin-bottom: 4rem;
+}
+
+.pages-4-system-requirement{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 4rem;
+    margin-left: 5rem;
+}
+
+.pages-4-system-requirement-title{
+    display: flex;
+    width: 39.57438rem;
+    height: 4.60269rem;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+}
+
+.pages-4-system-requirement-box{
+    display: grid;
+    border: 1px solid #979797;
+    grid-template-areas: 'col-1 col-2'
+    'col-3 col-4'
+    'col-5 col-5';
+    padding: 10px;
+    width: 42%;
+}
+
+.pages-4-system-requirement-box-col-1{
+    grid-area: col-1;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 12px;
+}
+
+.pages-4-system-requirement-box-col-2{
+    grid-area: col-2;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 12px;
+}
+
+.pages-4-system-requirement-box-col-3{
+    grid-area: col-3;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 12px;
+}
+
+.pages-4-system-requirement-box-col-4{
+    grid-area: col-4;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 12px;
+}
+
+.pages-4-system-requirement-box-col-5{
+    grid-area: col-5;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 12px;
+}
+
+
+.pages-4-system-requirement-box-col-1-title{
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.pages-4-system-requirement-box-col-1-desc{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem; /* 122.222% */
+}
+
+.pages-5{
+    background-image: url('../assets/img/bg5.png');
+    margin-top: -2px;
+    background-size: cover;
+    height: 60.00988rem;
+    flex-shrink: 0;
+    border: none;
+    color: var(--font-color);
+}
+
+.pages-5-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 100%;
+}
+
+.pages-5-left{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    font-family: Arial;
+    width: 25.68313rem;
+    gap: 3rem;
+}
+
+.pages-5-left-title{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+}
+
+.pages-5-left-desc{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1875rem;
+    text-transform: capitalize;
+}
+
+.pages-5-left-button{
+    width: 16.27263rem;
+    height: 3.75rem;
+    border-radius: 0.25rem;
+    background: linear-gradient(181deg, #FFB548 0%, #F3AF34 99.52%);
+    color: #1A1917;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages-5-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pages-5-right-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 28.28688rem;
+    height: 11.43363rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(255, 255, 255, 0.08);
+    margin-left: -5rem;
+}
+
+.pages-5-right-card2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 28.28688rem;
+    height: 11.43363rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(255, 255, 255, 0.08);
+    margin-left: -15rem;
+}
+
+.pages-5-right-card3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 28.28688rem;
+    height: 11.43363rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(255, 255, 255, 0.08);
+    margin-left: -10rem;
+}
+
+.pages-5-right-card-headers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.pages-5-right-card-headers-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pages-5-right-card-headers-profile-avatar{
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    border-radius: 999px;
+    box-shadow: 7px 1px 0px 0px rgba(255,180,73,0.75);
+}
+
+.pages-5-right-card-headers-name{
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.pages-5-right-card-headers-job{
+    color: #FFF;
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+    opacity: 0.5;
+}
+
+.pages-5-right-card-quote{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+.pages-5-right-card-date{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+    padding: 10px;
+}
+  
+
+  
+
 
