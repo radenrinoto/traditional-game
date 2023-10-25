@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -415,7 +417,7 @@ body {
     grid-column-end: 3;
 }
 
-/* Top Scores */
+/* Top Scores Section */
 .score {
     display: flex;
     align-items: center;
@@ -431,13 +433,19 @@ body {
 
 .score .score-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Score Left Section */
+.score .score-content .left {
+    margin-right: 193px;
 }
 
 .score .score-content .left h1 {
     color: var(--white);
     font-family: Arial;
     font-size: 56px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 3px;
@@ -446,11 +454,13 @@ body {
 
 .score .score-content .left p {
     color: #FFF;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 22px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    max-width: 370px;
 }
 
 .score .score-content .left .btn {
@@ -468,27 +478,44 @@ body {
     background: none;
     color: #1A1917;
     text-align: center;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
+    text-transform: lowercase;
+}
+
+/* Score Right Section */
+.score .score-content .right {
+    width: 550px;
+}
+
+.score .score-content .right .card2 {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 453.887px;
+    height: 205px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 30px;
+    margin-left: 0px;
 }
 
 .score .score-content .right .card1,
-.score .score-content .right .card2,
 .score .score-content .right .card3 {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    width: 350px;
+    width: 453.887px;
+    height: 205px;
     background: rgba(255, 255, 255, 0.08);
+    margin: 0 0 0 95px;
 }
 
 .score .score-content .right .card1 .head,
 .score .score-content .right .card2 .head,
 .score .score-content .right .card3 .head {
     display: flex;
-    padding-bottom: 22px;
 }
 
 .score .score-content .right .card1 .head img,
@@ -504,13 +531,21 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 22px;
-    padding-right: 76px;
 }
 
-.score .score-content .right .card1 .head .twitter,
-.score .score-content .right .card2 .head .twitter,
+.score .score-content .right .card1 .head .twitter {
+    margin-top: 15px;
+    margin-left: 170px;
+}
+
+.score .score-content .right .card2 .head .twitter {
+    margin-top: 15px;
+    margin-left: 160px;
+}
+
 .score .score-content .right .card3 .head .twitter {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 120px;
 }
 
 .score .score-content .right .card1 .head .head-content h1,
@@ -529,7 +564,7 @@ body {
 .score .score-content .right .card3 .head .head-content p {
     color: var(--white);
     text-align: justify;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -541,19 +576,36 @@ body {
 .score .score-content .right .card2 .body .title1,
 .score .score-content .right .card3 .body .title1 {
     color: var(--white);
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    padding-top: 27px;
+    padding-bottom: 9px;
+    max-width: 380px;
 }
 
 .score .score-content .right .card1 .body .title2,
 .score .score-content .right .card2 .body .title2,
 .score .score-content .right .card3 .body .title2 {
     color: var(--white);
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
     opacity: 0.5;
+}
+
+/* News Later Subscribe Section */
+.letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1A1917;
+    width: 1280px;
+    height: 800px;
+    margin-top: -1px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
