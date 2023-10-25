@@ -67,7 +67,11 @@
         <div class="page-about__right">
           <!-- IMAGE SLIDER -->
           <div class="image-slider">
-            <div class="image__ic-left"></div>
+            <div
+              id="prev_image_button"
+              class="image__ic-left"
+              onclick="sliderImage(`prev_image_button`)"
+            ></div>
             <div class="image__slide-container">
               <img src="/assets/image_slider.svg" />
               <div class="image__round-container">
@@ -77,7 +81,11 @@
                 <div class="image__ic-round-outline"></div>
               </div>
             </div>
-            <div class="image__ic-right"></div>
+            <div
+              id="next_image_button"
+              class="image__ic-right"
+              onclick="sliderImage(`next_image_button`)"
+            ></div>
           </div>
         </div>
       </div>
@@ -277,5 +285,6 @@
         <p class="desc-secondary">Privacy Policy | Terms of Services | Code of Conduct</p>
       </div>
     </div>
+    <script src="js/slider.js"></script>
   </body>
 </html>
