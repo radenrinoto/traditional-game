@@ -39,15 +39,20 @@
             <h1>THE GAMEs</h1>
         </div>
         <div class="slider">
-            <img src="./assets/image/scroll-down.png" width="20rem" style="transform: rotate(90deg);" onclick="plusSlides(-1)">
-            <div class="caraousel">
-                <img src="./assets/image/rockpaperstrategy-1600 1.png">
-                <img src="./assets/image/rockpaperstrategy-1600 1.png">
-                <img src="./assets/image/rockpaperstrategy-1600 1.png">
-                <img src="./assets/image/rockpaperstrategy-1600 1.png">
-                <img src="./assets/image/rockpaperstrategy-1600 1.png">
+            <img  src="./assets/image/scroll-down.png" width="20rem" style="transform: rotate(90deg); cursor: pointer;" onclick="plusSlides(-1)">
+            <div style="display: flex; flex-direction: column;">
+              <div class="caraousel">
+                <img src="./assets/image/rockpaperstrategy-1600 1.png" class="img-slide">
+                <img src="./assets/image/main-screen-b-img.png" class="img-slide">
+                <img src="./assets/image/feature-page-bg-img.png" class="img-slide">
             </div>
-            <img src="./assets/image/scroll-down.png" width="20rem"style="transform: rotate(-90deg);"  onclick="plusSlides(1)">
+            <div style="text-align:center" class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+            <img src="./assets/image/scroll-down.png" width="20rem"style="transform: rotate(-90deg); cursor: pointer;"  onclick="plusSlides(1)">
         </div>
     </div>
     <div id="feature-page" class="page">
@@ -212,6 +217,7 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+  console.log(n)
   showSlides(slideIndex += n);
 }
 
@@ -221,7 +227,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("carousel");
+  let slides = document.getElementsByClassName("img-slide");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
