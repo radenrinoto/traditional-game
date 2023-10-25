@@ -1,0 +1,9 @@
+.btn-primary {
+  width: fit-content;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  padding: 15px 40px;
+  color: rgb(34, 34, 34);
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+}

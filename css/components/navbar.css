@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navbar-list__link {
+  color: white;
+  cursor: pointer;
+}
