@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+  #main-screen > h1 {
+    font-size: 48px;
+  }
+  #main-screen > h3 {
+    font-size: 18px;
+  }
+  .caraousel {
+    max-width: 50vw;
+  }
+  .caraousel img {
+    width: 50vw;
+    height: auto;
+  }
+  #feature-page h1 {
+    font-size: 36px;
+  }
+  .q1 {
+    left: 0;
+  }
+  .q2 {
+    left: 0;
+  }
+  .q3 {
+    left: 0;
+  }
+  footer .footer-section {
+    flex-wrap: wrap;
+  }
+  #newsletter-page img {
+    height: auto;
+    width: 10rem;
+  }
+}
