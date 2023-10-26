@@ -36,6 +36,12 @@ body {
     opacity: 0.7;
 }
 
+#menu-icon {
+    font-size: 57px;
+    color: var(--white);
+    display: none;
+}
+
 .navigation .menu a {
     color: var(--white);
     display: inline-block;
@@ -96,7 +102,7 @@ body {
 
 /* Header Section */
 .header {
-    background-image: url('assets/bg-image1.png');
+    background-image: url('../assets/bg-image1.png');
     width: 1280px;
     height: 800px;
     position: relative;
@@ -160,7 +166,7 @@ body {
 
 /* Games Section */
 .games {
-    background-image: url('assets/bg-image2.png');
+    background-image: url('../assets/bg-image2.png');
     width: 1280px;
     height: 800px;
     margin-top: -0.5px;
@@ -262,7 +268,7 @@ body {
 .features {
     display: flex;
     justify-content: center;
-    background-image: url('assets/bg-image3.png');
+    background-image: url('../assets/bg-image3.png');
     width: 1280px;
     height: 800px;
     margin-top: -1px;
@@ -343,7 +349,7 @@ body {
 
 /* System Requirements Section */
 .system {
-    background-image: url('assets/bg-image4.png');
+    background-image: url('../assets/bg-image4.png');
     color: var(--white);
     width: 1280px;
     height: 800px;
@@ -432,7 +438,7 @@ body {
 
 /* Top Scores Section */
 .score {
-    background-image: url('assets/bg-image5.png');
+    background-image: url('../assets/bg-image5.png');
     width: 1280px;
     height: 800px;
     margin-top: -1px;
@@ -606,7 +612,7 @@ body {
 
 /* News Later Subscribe Section */
 .letter {
-    background-image: url('assets/bg-image6.png');
+    background-image: url('../assets/bg-image6.png');
     width: 1280px;
     height: 800px;
     position: relative;
@@ -714,7 +720,7 @@ body {
 
 /* Footer Section */
 footer {
-    background-image: url('assets/bg-image6.png');
+    background-image: url('../assets/bg-image6.png');
     width: 100vw;
     height: auto;
     position: relative;

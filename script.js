@@ -1,3 +1,4 @@
+// Slider Images Function
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
 const slideWidth = slides[0].clientWidth;
@@ -22,3 +23,13 @@ document.querySelector('.slider-control.prev').addEventListener('click', prevSli
 document.querySelector('.slider-control.next').addEventListener('click', nextSlide);
 
 moveSlide(index);
+
+// Hamburger Menu Function
+let menuIcon = document.querySelector('#menu-icon')
+let navbar1 = document.querySelector('.menu')
+let navbar2 = document.querySelector('.auth')
+
+menuIcon.onClick = () => {
+    menuIcon.classList.toogle('bx-x')
+    navbar1.classList.toogle('active')
+}

@@ -1,0 +1,181 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --black-title: #1A1917;
+    --yellow-color: #FFB548;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .menu,
+    .auth {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 12px 3%;
+        background: var(--white);
+        border-top: 1px solid rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    /* Header Content */
+    .header {
+        width: 100%;
+        height: auto;
+        background-position: center;
+    }
+
+    .header .header-content h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+        padding-top: 6rem;
+    }
+
+    .header .header-content h3 {
+        font-size: 1rem;
+        max-width: 15rem;
+        padding-top: 20px;
+    }
+
+    /* Game Content */
+    .games {
+        width: 100%;
+        height: auto;
+        background-position: center;
+    }
+
+    /* Features Content */
+    .features {
+        width: 100%;
+        height: auto;
+        background-position: right;
+    }
+
+    .features .features-content {
+        .title {
+            padding-left: 0;
+        }
+
+        .title h3 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .title h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .title .info {
+            margin-top: 4rem;
+
+            .icon1,
+            .icon2,
+            .icon3 {
+                padding: 0 25px;
+            }
+
+            .icon1 .theme,
+            .icon2 .theme,
+            .icon3 .theme {
+                margin-left: 2rem;
+            }
+
+            .icon1 .theme h1,
+            .icon2 .theme h1,
+            .icon3 .theme h1 {
+                text-align: left;
+                font-size: 24px;
+            }
+        }
+    }
+
+    /* System Requirements Content */
+    .system {
+        width: 100%;
+        height: auto;
+        background-position: center;
+    }
+
+    .system .system-content .head p {
+        font-size: 16px;
+    }
+
+    .body-content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .system .system-content .body {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+
+        .spesification {
+            display: grid;
+            grid-template-columns: 23.3rem;
+            max-width: 10rem;
+            text-align: center;
+        }
+    }
+
+    .item5 p {
+        font-size: 18px;
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    .item5 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /* Top Scores Content */
+    .score {
+        width: 100%;
+        height: auto;
+        background-position: center;
+    }
+
+    .score .score-content {
+        flex-direction: column;
+    }
+
+    .score-content {
+        .left {
+            padding-top: 5rem;
+            margin-right: 0;
+            text-align: center;
+        }
+    
+        .left h1 {
+            font-size: 40px;
+        }
+    
+        .left p {
+            font-size: 18px;
+            max-width: 370px;
+            padding: 2rem;
+        }
+    
+        .left .btn {
+            width: 200px;
+            height: 60px;
+            
+        }
+    
+        .left .btn .btn-see {
+            background: none;
+            color: var(--black-title);
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: lowercase;
+        }
+    }
+}
