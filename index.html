@@ -6,6 +6,7 @@
     <title>Traditional Game</title>
     <link rel="icon" href="./assets/images/menakins.svg" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.style.css" />
   </head>
   <body>
     <header>
@@ -21,7 +22,9 @@
             </ul>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
-            <span><i class="ri-menu-line"></i></span>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
           <div class="nav__actions">
             <a>Sign Up</a>
@@ -51,24 +54,29 @@
             <h1>THE GAMES</h1>
           </div>
           <div class="corousel__images">
-            <img src="./assets/images/about-data-1.png" alt="about image" />
-            <img
-              src="./assets/images/arrow-left.svg"
-              alt="arrow-left"
-              class="arrow__left"
-            />
-            <img
-              src="./assets/images/arrow-right.svg"
-              alt="arrow-left"
-              class="arrow__right"
-            />
-            <div class="list__ellips">
-              <img src="./assets/images/ellips-solid.svg" alt="ellips" />
-              <img src="./assets/images/ellips-outline.svg" alt="ellips" />
-              <img src="./assets/images/ellips-outline.svg" alt="ellips" />
-              <img src="./assets/images/ellips-outline.svg" alt="ellips" />
-              <img src="./assets/images/ellips-outline.svg" alt="ellips" />
+            <div class="carousel__slides">
+              <div class="carousel__slide">
+                <img src="./assets/images/about-data-1.png" alt="about image" />
+                <img src="./assets/images/about-data-1.png" alt="about image" />
+                <img src="./assets/images/about-data-1.png" alt="about image" />
+                <img src="./assets/images/about-data-1.png" alt="about image" />
+              </div>
             </div>
+            <button id="prevButton">
+              <img
+                src="./assets/images/arrow-left.svg"
+                alt="arrow-left"
+                class="arrow__left"
+              />
+            </button>
+            <button id="nextButton">
+              <img
+                src="./assets/images/arrow-right.svg"
+                alt="arrow-left"
+                class="arrow__right"
+              />
+            </button>
+            <div class="list__ellips"></div>
           </div>
         </div>
       </section>
@@ -147,63 +155,73 @@
             <p>this top score from varios games provied on this platform</p>
             <a href="">see more</a>
           </div>
-          <div class="right__section__quotes">
-            <!-- card -->
-            <div class="card__wrapper">
-              <div class="card__quotes card__one">
-                <div class="card__header">
-                  <div class="card__profile">
-                    <div class="avatar__wrapper">
-                      <img src="./assets/images/avatar-1.svg" alt="avatar" />
-                    </div>
-                    <div>
-                      <h1>Evan Lahti</h1>
-                      <h2>Pc Gamer</h2>
-                    </div>
+          <!-- card -->
+          <div class="card__wrapper">
+            <div class="card__quotes card__one">
+              <div class="card__header">
+                <div class="card__profile">
+                  <div class="avatar__wrapper">
+                    <img src="./assets/images/avatar-1.svg" alt="avatar" />
                   </div>
-                  <img src="./assets/images/twitter-logo.svg" alt="twitter" />
-                </div>
-                <p>“One of my gaming highlights of the year.”</p>
-                <h6>June 18, 2021</h6>
-              </div>
-              <div class="card__quotes">
-                <div class="card__header">
-                  <div class="card__profile">
-                    <div class="avatar__wrapper">
-                      <img src="./assets/images/avatar-2.svg" alt="avatar" />
-                    </div>
-                    <div>
-                      <h1>Jada Griffin</h1>
-                      <h2>Nerdreactor</h2>
-                    </div>
+                  <div>
+                    <h1>Evan Lahti</h1>
+                    <h2>Pc Gamer</h2>
                   </div>
-                  <img src="./assets/images/twitter-logo.svg" alt="twitter" />
                 </div>
-                <p>
-                  “The next big thing in the world of streaming and survival
-                  games.”
-                </p>
-                <h6>July 10, 2021</h6>
+                <img
+                  src="./assets/images/twitter-logo.svg"
+                  alt="twitter"
+                  style="width: 20px"
+                />
               </div>
-              <div class="card__quotes card__one">
-                <div class="card__header">
-                  <div class="card__profile">
-                    <div class="avatar__wrapper">
-                      <img src="./assets/images/avatar-3.svg" alt="avatar" />
-                    </div>
-                    <div>
-                      <h1>Aaron Williams</h1>
-                      <h2>Uproxx</h2>
-                    </div>
+              <p>“One of my gaming highlights of the year.”</p>
+              <h6>June 18, 2021</h6>
+            </div>
+            <div class="card__quotes">
+              <div class="card__header">
+                <div class="card__profile">
+                  <div class="avatar__wrapper">
+                    <img src="./assets/images/avatar-2.svg" alt="avatar" />
                   </div>
-                  <img src="./assets/images/twitter-logo.svg" alt="twitter" />
+                  <div>
+                    <h1>Jada Griffin</h1>
+                    <h2>Nerdreactor</h2>
+                  </div>
                 </div>
-                <p>
-                  “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
-                  Ridiculous.”
-                </p>
-                <h6>December 24, 2018</h6>
+                <img
+                  src="./assets/images/twitter-logo.svg"
+                  alt="twitter"
+                  style="width: 20px"
+                />
               </div>
+              <p>
+                “The next big thing in the world of streaming and survival
+                games.”
+              </p>
+              <h6>July 10, 2021</h6>
+            </div>
+            <div class="card__quotes card__one">
+              <div class="card__header">
+                <div class="card__profile">
+                  <div class="avatar__wrapper">
+                    <img src="./assets/images/avatar-3.svg" alt="avatar" />
+                  </div>
+                  <div>
+                    <h1>Aaron Williams</h1>
+                    <h2>Uproxx</h2>
+                  </div>
+                </div>
+                <img
+                  src="./assets/images/twitter-logo.svg"
+                  alt="twitter"
+                  style="width: 20px"
+                />
+              </div>
+              <p>
+                “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                Ridiculous.”
+              </p>
+              <h6>December 24, 2018</h6>
             </div>
           </div>
         </div>
@@ -230,7 +248,7 @@
       <footer>
         <div class="section__container footer__wrapper">
           <div class="top__wrapper">
-            <ul class="nav__links">
+            <ul class="footer__links">
               <li class="social__link"><a href="">main</a></li>
               <li class="social__link"><a href="">about</a></li>
               <li class="social__link"><a href="">game features</a></li>
@@ -252,5 +270,6 @@
         </div>
       </footer>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>

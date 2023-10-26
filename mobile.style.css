@@ -1,0 +1,268 @@
+@import './style.css';
+
+/* xs */
+@media only screen and (max-width: 756px) {
+  /* nav start */
+  .nav__links {
+    position: absolute;
+    left: 0;
+    top: 61px;
+    padding: 2rem;
+    width: 100%;
+    flex-direction: column;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+    background-image: url('assets/images/header-background.svg');
+  }
+  .nav__wrapper {
+    padding: 1rem;
+  }
+  .nav__links .link a {
+    opacity: 0;
+  }
+
+  .nav__links.open .link a {
+    opacity: 1;
+  }
+
+  .nav__links.open {
+    transform: scaleY(1);
+  }
+
+  .nav__menu__btn {
+    display: block;
+  }
+  .nav__menu__btn div {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px 0;
+  }
+  .nav__actions {
+    display: none;
+  }
+  /* nav end */
+
+  /* header start */
+  .header__container h1 {
+    font-size: 30px;
+  }
+  .header__container h3 {
+    font-size: 15px;
+  }
+  .header__btn button {
+    width: 150px;
+    font-size: 12px;
+    height: 40px;
+  }
+  /* header end */
+
+  /* about start */
+  .about__wrapper {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    gap: 0;
+  }
+  .about__content {
+    margin-bottom: 0;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  .about__content h3 {
+    font-size: 18px;
+  }
+  .about__content h1 {
+    font-size: 40px;
+  }
+  .corousel__images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .carousel-slides img {
+    width: 10px;
+  }
+  .arrow__left {
+    left: 5px;
+  }
+  .arrow__right {
+    right: 15px;
+  }
+  .list__ellips {
+    bottom: 70px;
+    gap: 10px;
+  }
+  .list__ellips img {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* gamefeture start */
+  .game__feature__wrapper__content {
+    width: 100%;
+  }
+  .game__feature__wrapper__content h3 {
+    font-size: 18px;
+  }
+  .game__feature__wrapper__content h1 {
+    font-size: 40px;
+  }
+  .game__feature__traditional {
+    margin-top: 1rem;
+  }
+  .content__progress__bar h1 {
+    font-size: 20px;
+  }
+  .content__progress__bar p {
+    font-size: 16px;
+    margin-top: 5px;
+    max-width: 100%;
+  }
+  .content__progress__bar .game {
+    margin-top: 85px;
+  }
+  .content__progress__bar .tbd {
+    margin-top: 40px;
+  }
+  /* game feature end */
+
+  /* system req start */
+  .sys__req__container h3 {
+    padding-top: 80px;
+  }
+  .req__content {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 4rem;
+  }
+  .req__content h1 {
+    font-size: 30px;
+  }
+  .table__1 {
+    width: 100%;
+  }
+  .table__1 h1 {
+    font-size: 18px;
+  }
+  .table__1 p {
+    font-size: 14px;
+  }
+  .table__single h1 {
+    font-size: 18px;
+  }
+  .table__single p {
+    font-size: 14px;
+  }
+  /* system req end */
+
+  /* quotes start */
+  .quotes__wrapper {
+    flex-direction: column;
+  }
+  .left__section__quotes {
+    width: 100%;
+    gap: 10px;
+  }
+  .left__section__quotes h1 {
+    font-size: 40px;
+  }
+  .left__section__quotes a {
+    padding: 10px 40px;
+  }
+  .card__wrapper {
+    padding: 0 20px;
+    margin-top: 3rem;
+  }
+  .card__one {
+    margin-left: 20px;
+  }
+  .card__quotes {
+    width: 100%;
+  }
+  .card__quotes img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card__quotes h1 {
+    font-size: 18px;
+  }
+  .card__quotes h2 {
+    font-size: 14px;
+  }
+  .card__quotes p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .card__quotes h6 {
+    margin-top: 8px;
+  }
+  /* quotes end */
+
+  /* subscribe start */
+  .subcribe__container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url('assets/images/menakins.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .content__subscribe h1 {
+    font-size: 40px;
+    margin-top: 1rem;
+  }
+  .content__subscribe form button {
+    width: 30%;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .content__subscribe h3 {
+    max-width: 100%;
+  }
+  .content__subscribe p {
+    font-size: 16px;
+    max-width: 100%;
+    margin-top: 0.8rem;
+  }
+  .content__subscribe input {
+    width: 70%;
+  }
+  .subscribe__wrapper img {
+    display: none;
+  }
+  /* subscribe end */
+
+  /* footer start */
+  .footer__links {
+    gap: 10px;
+    font-size: 8px;
+  }
+  .top__wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bottom__wrapper {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .bottom__wrapper h4 {
+    font-weight: 500;
+    font-size: 10px;
+  }
+  /* footer end */
+}
