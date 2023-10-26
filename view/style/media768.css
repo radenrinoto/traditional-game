@@ -1,0 +1,343 @@
+@media only screen and (max-width: 600px) {
+  /* STYLE HOMEPAGE INCLUDE NAVBAR AND CONTENT */
+  .home {
+    height: 100vh;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .homeContent .titleCont .title h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 3%;
+  }
+
+  .homeContent .titleCont .subtitle h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+  }
+  .homeContent .titleCont .buttonCont .titleButton {
+    background: linear-gradient(to right, #ffb548, #f3af34);
+    width: 200px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+  .homeContent {
+    padding-top: 24%;
+  }
+  .storyScrollCont h1 {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    margin-top: 80%;
+    font-family: "Open Sans", sans-serif;
+  }
+  /* STORY PAGE */
+
+  .story {
+    height: 100vh;
+    display: block;
+  }
+
+  .story .titleStory h2 {
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+  }
+  .story .titleStory h1 {
+    margin-top: 30px;
+    color: white;
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 3px;
+  }
+
+  .story .carousel img {
+    width: 300px;
+    height: 200px;
+    padding-top: 15%;
+    padding-left: 7%;
+  }
+
+  .carousel-container {
+    position: relative;
+    max-width: 558px;
+    margin-top: 0;
+  }
+
+  .arrow {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1px 1px;
+    margin-top: 35%;
+    cursor: pointer;
+  }
+
+  /* FEATURES */
+
+  .features {
+    background-image: url("../../asset/bg-features-rs.png");
+    height: 100vh;
+    display: flex;
+    margin-top: -0.5px;
+  }
+
+  .titleContFeatures {
+    padding-top: 40%;
+    padding-left: 10%;
+  }
+
+  /* REQUIREMENT */
+
+  .requirement {
+    height: 100vh;
+  }
+
+  .requirement .headTitle h1 {
+    font-size: 10px;
+    margin-top: 10%;
+  }
+
+  .requirement .systemReq .titleReq h1 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: lighter;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+
+  .requirement .systemReq .spec {
+    margin-left: 9%;
+    width: 85%;
+  }
+
+  .requirement .systemReq .spec h1 {
+    color: #ffb548;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .requirement .systemReq .spec h2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+    width: 90%;
+  }
+
+  /* TOP SCORES */
+
+  .topScores {
+    height: 120vh;
+    display: block;
+    margin-top: -100px;
+  }
+
+  .topScores .titleCont h1 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+  }
+
+  .topScores .titleCont h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    margin-top: 27px;
+    text-align: center;
+  }
+
+  .topScores .titleCont .buttonCont .titleButton {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+
+  .topScores .cardCont {
+    margin-left: 8%;
+    margin-top: 8%;
+  }
+
+  .topScores .cardCont .card1 {
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 340px;
+    height: 183px;
+    margin-bottom: 6%;
+    margin-left: 0px;
+  }
+
+  .topScores .cardCont .card1 .headerCard {
+    display: flex;
+  }
+  .topScores .cardCont .card1 .headerCard svg {
+    margin-left: 25%;
+  }
+  .topScores .cardCont .card1 .headerCard h1 {
+    font-size: 18px;
+  }
+  .topScores .cardCont .card1 .headerCard h2 {
+    font-size: 14px;
+  }
+  .topScores .cardCont .card1 .bodyCard h1 {
+    font-size: 16px;
+  }
+  .topScores .cardCont .card1 .bodyCard h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 8%;
+    margin-left: 16.6px;
+  }
+
+  .topScores .cardCont .card2 {
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 340px;
+    height: 183px;
+    margin-bottom: 6%;
+    margin-left: 0px;
+  }
+
+  .topScores .cardCont .card2 .headerCard {
+    display: flex;
+  }
+  .topScores .cardCont .card2 .headerCard svg {
+    margin-left: 22%;
+  }
+  .topScores .cardCont .card2 .headerCard h1 {
+    font-size: 18px;
+  }
+  .topScores .cardCont .card2 .headerCard h2 {
+    font-size: 14px;
+  }
+  .topScores .cardCont .card2 .bodyCard h1 {
+    font-size: 16px;
+  }
+  .topScores .cardCont .card2 .bodyCard h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 8%;
+    margin-left: 16.6px;
+  }
+
+  .topScores .cardCont .card3 {
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 340px;
+    height: 183px;
+    margin-bottom: 6%;
+    margin-left: 0px;
+  }
+
+  .topScores .cardCont .card3 .headerCard {
+    display: flex;
+  }
+  .topScores .cardCont .card3 .headerCard svg {
+    margin-left: 12%;
+  }
+  .topScores .cardCont .card3 .headerCard h1 {
+    font-size: 18px;
+    width: 150px;
+  }
+  .topScores .cardCont .card3 .headerCard h2 {
+    font-size: 14px;
+  }
+  .topScores .cardCont .card3 .bodyCard h1 {
+    font-size: 16px;
+  }
+  .topScores .cardCont .card3 .bodyCard h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 2%;
+    margin-left: 16.6px;
+  }
+
+  /* newsletter */
+
+  .newsletter {
+    height: 100vh;
+    display: block;
+    margin-top: -100px;
+  }
+
+  .newsletter .imgCont img {
+    display: none;
+  }
+
+  .newsletter .titleCont h2 {
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    width: 200px;
+    padding-top: 18%;
+    padding-left: 25%;
+  }
+
+  .newsletter .titleCont h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+    margin-bottom: 0;
+  }
+
+  .newsletter .titleCont h3 {
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    width: 75%;
+    padding-left: 10%;
+  }
+
+  .subscribeCont {
+    display: block;
+    margin-left: 20%;
+  }
+  .subscribeCont .email-form {
+    width: 200px;
+    padding-left: 12px;
+  }
+
+  .subscribeCont .email-form label {
+    font-size: 12px;
+  }
+  .subscribeCont .email-form input {
+    font-size: 14px;
+  }
+
+  .subscribeCont .buttonCont button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 2%;
+    margin-top: 10%;
+  }
+  .footer {
+    display: none;
+  }
+}

@@ -20,7 +20,17 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   height: 90px;
   padding-left: 107px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
+
+.nav.scrolled {
+  background-color: rgba(0, 0, 0, 1);
+  height: 60px;
+}
+
 .nav .logo {
   font-weight: bold;
   font-size: 24px;
@@ -32,6 +42,15 @@ body {
   margin-left: 15%;
   width: 40%;
 }
+.pointer {
+  cursor: pointer;
+}
+
+.nav .menu ul .pointer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
 
 .nav .menu ul {
   display: flex;
@@ -40,7 +59,6 @@ body {
 }
 
 .nav .menu ul li {
-  color: white;
   margin-right: 10%;
   font-weight: bold;
   font-size: 12px;
@@ -265,13 +283,14 @@ body {
 
 .requirement .systemReq .spec {
   margin-left: 9%;
+  width: 573px;
 }
 
 .requirement .systemReq .spec .cont1 {
   display: flex;
 }
 .requirement .systemReq .spec .cont1 .items1 {
-  width: 276px;
+  width: 50%;
   padding-bottom: 35px;
   border: 1px solid #979797;
   padding-left: 20px;
@@ -283,12 +302,13 @@ body {
   border: 1px solid #979797;
   padding-bottom: 35px;
   padding-left: 20px;
+  width: 50%;
 }
 .requirement .systemReq .spec .cont2 {
   display: flex;
 }
 .requirement .systemReq .spec .cont2 .items3 {
-  width: 276px;
+  width: 50%;
   border: 1px solid #979797;
   padding-bottom: 35px;
   padding-left: 20px;
@@ -300,7 +320,7 @@ body {
   border: 1px solid #979797;
   padding-left: 20px;
   padding-bottom: 35px;
-  width: 248px;
+  width: 50%;
 }
 .requirement .systemReq .spec .cont2 .items4 h2 {
   width: 100%;
@@ -312,7 +332,10 @@ body {
   border: 1px solid #979797;
   padding-left: 20px;
   padding-bottom: 20px;
-  width: 40.7%;
+  width: 100%;
+}
+.requirement .systemReq .spec .cont3 .items5 h2 {
+  width: 80%;
 }
 
 .requirement .systemReq .spec h1 {
@@ -544,7 +567,7 @@ NEWSLETTER */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
-  height: 120vh;
+  height: 110vh;
   display: flex;
   margin-top: -0.5px;
 }
@@ -579,6 +602,7 @@ NEWSLETTER */
   font-size: 18px;
   color: white;
   margin-top: 4%;
+  width: 75%;
 }
 
 .subscribeCont {
@@ -628,4 +652,139 @@ NEWSLETTER */
   margin-left: 0;
   margin-top: 2.5%;
   margin-left: 6%;
+}
+
+/* footer */
+
+.footer {
+  background-image: url("../../asset/bg-news.png");
+  background-color: black;
+  height: 30vh;
+}
+.footer .list1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer .list1 .menuCont {
+  display: flex;
+}
+
+.footer .list1 .menuCont a {
+  text-decoration: none;
+}
+
+.footer .list1 .menuCont p {
+  margin-top: 0;
+  color: white;
+  padding-left: 32px;
+}
+
+.footer .list1 .imgCont {
+  display: flex;
+}
+.footer .list1 .imgCont .fb {
+  margin-left: 100%;
+}
+.footer .list1 .imgCont img {
+  margin-left: 50%;
+}
+
+.footer .garis {
+  border: none;
+  border-top: 1px solid white;
+  width: 80%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: white;
+}
+
+.footer .list2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.footer .list2 .copyright {
+  margin-left: 10%;
+}
+.footer .list2 .copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.footer .list2 .listPolicy {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 10%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 26%;
+  margin-right: 10%;
+}
+.footer .list2 .listPolicy .break {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* carousel */
+.carousel-container {
+  position: relative;
+  max-width: 858px;
+  margin: 0 auto;
+}
+
+.carousell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-inner {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 35%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+  border: 1px solid white;
 }

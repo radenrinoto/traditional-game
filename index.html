@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./view/style/style.css" />
+    <!-- mediaquerycss -->
+    <link rel="stylesheet" href="./view/style/media768.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
@@ -11,21 +13,21 @@
     <title>Traditional Games</title>
   </head>
   <body>
-    <div class="home">
+    <div class="home" id="home">
       <div class="nav">
         <div class="logo"><p class="logo">LOGO</p></div>
         <div class="menu">
           <ul>
-            <li>HOME</li>
-            <li>WORK</li>
-            <li>CONTACT</li>
-            <li>ABOUT ME</li>
+            <li class="pointer"><a class="scroll-button" href="#home">HOME</a></li>
+            <li class="pointer"><a class="scroll-button" href="#topScores">WORK</a></li>
+            <li class="pointer"><a class="scroll-button" href="#footer">CONTACT</a></li>
+            <li class="pointer"><a class="scroll-button" href="#newsletter">ABOUT ME</a></li>
           </ul>
         </div>
         <div class="authentication">
           <ul>
-            <li>SIGN UP</li>
-            <li>LOGIN</li>
+            <li class="pointer">SIGN UP</li>
+            <li class="pointer">LOGIN</li>
           </ul>
         </div>
       </div>
@@ -38,25 +40,54 @@
             <h2>Experience new traditional game play</h2>
           </div>
           <div class="buttonCont">
-            <button class="titleButton">Play Now</button>
+            <button class="titleButton pointer">Play Now</button>
           </div>
           <div class="storyScrollCont">
-            <h1>THE STORY</h1>
-            <img src="../asset/scroll-down.svg" alt="logo" />
+            <a href="#story" class="scroll-button"><h1>THE STORY</h1></a>
+            <img src="./asset/scroll-down.svg" alt="logo" />
           </div>
         </div>
       </div>
     </div>
-    <div class="story">
+    <div class="story" id="story">
       <div class="titleStory">
         <h2>What’s so special?</h2>
         <h1>THE GAMES</h1>
       </div>
       <div class="carousel">
-        <img src="../asset/carousel1.jpg" alt="image" />
+        <div class="carousel-container">
+          <div class="carousell">
+            <button class="arrow prev">◄</button>
+            <div class="carousel-inner">
+              <div class="carousel-slide">
+                <img src="./asset/carousel1.jpg" alt="Gambar 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./asset/carousel2.jpg" alt="Gambar 2" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./asset/carousel3.jpg" alt="Gambar 3" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./asset/carousel4.jpg" alt="Gambar 4" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./asset/carousel5.jpg" alt="Gambar 5" />
+              </div>
+            </div>
+            <button class="arrow next">►</button>
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="features">
+    <div class="features" id="features">
       <div class="titleContFeatures">
         <div class="titleFeatures">
           <h2>What's so special?</h2>
@@ -92,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="requirement">
+    <div class="requirement" id="requirement">
       <div class="reqCont">
         <div class="headTitle">
           <h1>Can My Computer Run this game?</h1>
@@ -138,18 +169,18 @@
         </div>
       </div>
     </div>
-    <div class="topScores">
+    <div class="topScores" id="topScores">
       <div class="titleCont">
         <h1>TOP SCORES</h1>
         <h2>This top score from various games provided on this platform</h2>
         <div class="buttonCont">
-          <button class="titleButton">see more</button>
+          <button class="titleButton pointer">see more</button>
         </div>
       </div>
       <div class="cardCont">
         <div class="card1">
           <div class="headerCard">
-            <img src="../asset/picture-evan.png" alt="picture" />
+            <img src="./asset/picture-evan.png" alt="picture" />
             <div class="name">
               <h1>Evan Lahti</h1>
               <h2>PC Gamer</h2>
@@ -169,7 +200,7 @@
         </div>
         <div class="card2">
           <div class="headerCard">
-            <img src="../asset/picture-jada.png" alt="picture" />
+            <img src="./asset/picture-jada.png" alt="picture" />
             <div class="name">
               <h1>Jada Griffin</h1>
               <h2>Nerdreactor</h2>
@@ -189,7 +220,7 @@
         </div>
         <div class="card3">
           <div class="headerCard">
-            <img src="../asset/picture-aaron.png" alt="picture" />
+            <img src="./asset/picture-aaron.png" alt="picture" />
             <div class="name">
               <h1>Aaron Williams</h1>
               <h2>Uproxx</h2>
@@ -212,9 +243,9 @@
         </div>
       </div>
     </div>
-    <div class="newsletter">
+    <div class="newsletter" id="newsletter">
       <div class="imgCont">
-        <img src="../asset/picture-trophy.png" alt="trophy" />
+        <img src="./asset/picture-trophy.png" alt="trophy" />
       </div>
       <div class="titleCont">
         <h2>Want to stay in touch?</h2>
@@ -226,21 +257,42 @@
             <input type="email" id="email" name="email" placeholder="youremail@binar.co,id" required />
           </form>
           <div class="buttonCont">
-            <button class="titleButton">Subscribe Now</button>
+            <button class="titleButton pointer">Subscribe Now</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="footer">
+    <div class="footer" id="footer">
       <div class="list1">
-        <p>MAIN</p>
-        <p>ABOUT</p>
-        <p>GAME FEATURES</p>
-        <p>SYSTEM REQUIREMENTS</p>
-        <p>QUOTES</p>
-        <img src="../asset/facebook.png" alt="logo" />
+        <div class="menuCont">
+          <a href="#home" class="pointer scroll-button"><p>MAIN</p></a>
+          <a href="#story" class="pointer scroll-button"><p>ABOUT</p></a>
+          <a href="#features" class="pointer scroll-button"><p>GAME FEATURES</p></a>
+          <a href="#requirement" class="pointer scroll-button"><p>SYSTEM REQUIREMENTS</p></a>
+          <a href="#topScores" class="pointer scroll-button"><p>QUOTES</p></a>
+        </div>
+        <div class="imgCont">
+          <img class="fb pointer" src="./asset/facebook.png" width="9px" height="19px" alt="logo" />
+          <img class="pointer" src="./asset/twitter.png" width="21px" height="16px" alt="logo" />
+          <img class="pointer" src="./asset/Group 6.png" width="29px" height="31px" alt="logo" />
+          <img class="pointer" src="./asset/twitch.png" width="19px" height="18px" alt="logo" />
+        </div>
       </div>
-    </div> -->
+      <div class="garis"></div>
+      <div class="list2">
+        <div class="copyright">
+          <p>© 2018 Your Games, Inc. All Rights Reserved</p>
+        </div>
+        <div class="listPolicy">
+          <p class="pointer">PRIVACY POLICY</p>
+          <p class="break">|</p>
+          <p class="pointer">TERMS OF SERVICES</p>
+          <p class="break">|</p>
+          <p class="pointer">CODE OF CONDUCT</p>
+        </div>
+      </div>
+    </div>
+    <script src="./view/javascript/script.js"></script>
   </body>
 </html>
