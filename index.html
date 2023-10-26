@@ -6,63 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title> Landing Page Traditional Game </title>
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- Header -->
-    <!-- <header class="header">
+    <!-- Navigation -->
+    <nav class="navigation">
         <a href="#" class="logo"> LOGO </a>
-        <nav class="navbar">
-            <a href="#home" class="homes active"> Home </a>
-            <a href="#work" class="abouts"> Work </a>
-            <a href="#contact" class="projects"> Contact </a>
-            <a href="#about" class="contacts"> About Me </a>
-        </nav>
-    </header> -->
-
-    <section class="section1" id="section1">
-        <div class="section1-content">
-            <h1> Play Tradisional Game </h1>
-            <h3> Experience new traditional game play </h3>
-            <div class="btn">
-                <button class="btn-play"> Play Now </button>
-            </div>
-            <div class="scroll-down">
-                <p> The Story </p>
-                <i class='bx bx-down-arrow'></i>
-            </div>
+        <div class="menu">
+            <a href="#home"> Home </a>
+            <a href="#work"> Work </a>
+            <a href="#contact"> Contact </a>
+            <a href="#about"> About Me </a>
         </div>
-    </section>
-    <section class="section2">
-        <div class="section2-content">
+        <div class="auth">
+            <a href="#signup"> Sign Up </a>
+            <a href="#login"> Login </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div id="home">
+        <section class="header" id="header">
+            <div class="header-content">
+                <h1> Play Tradisional Game </h1>
+                <h3> Experience new traditional game play </h3>
+                <div class="btn">
+                    <button class="btn-play"> Play Now </button>
+                </div>
+                <div class="scroll-down animate__animated animate__infinite animate__pulse">
+                    <p> The Story </p>
+                    <i class='bx bx-down-arrow'></i>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Games -->
+    <section class="games" id="games">
+        <div class="games-content">
             <div class="title">
                 <h3> What's so special? </h3>
                 <h1> The Games </h1>
             </div>
-            <div class="carousel">
-                <i class='bx bx-left-arrow'></i>
-                <img src="assets/games.png" alt="image1">
-                <i class='bx bx-right-arrow'></i>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/bg-image1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/bg-image3.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/games.png" alt="Slide 2">
+                    </div>
+                </div>
+                <button class="slider-control prev">
+                    <i class='bx bx-left-arrow bx-sm'></i>
+                </button>
+                <button class="slider-control next">
+                    <i class='bx bx-right-arrow bx-sm'></i>
+                </button>
             </div>
-        </div>
     </section>
 
-    <!-- Section 3 -->
-    <section class="section3">
-        <div class="section3-content">
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="features-content">
             <div class="title">
                 <h3> What's so special? </h3>
                 <h1> Features </h1>
                 <div class="info">
                     <div class="icon1">
                         <div class="icon1-content">
-                            <svg width="17" height="150" viewBox="0 0 17 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.41797 8.3772L8.41796 149.409" stroke="white" stroke-width="1.95955"/>
-                                <circle cx="8.62158" cy="7.7804" r="7" transform="rotate(90 8.62158 7.7804)" fill="white" stroke="white" stroke-width="1.30637"/>
+                            <svg width="17" height="150" viewBox="0 0 17 150" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.41797 8.3772L8.41796 149.409" stroke="white" stroke-width="1.95955" />
+                                <circle cx="8.62158" cy="7.7804" r="7" transform="rotate(90 8.62158 7.7804)"
+                                    fill="white" stroke="white" stroke-width="1.30637" />
                             </svg>
                         </div>
                         <div class="theme">
@@ -72,8 +98,10 @@
                     </div>
                     <div class="icon2">
                         <div class="icon2-content">
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="8.21436" cy="8.54761" r="7" transform="rotate(90 8.21436 8.54761)" stroke="white" stroke-width="1.30637"/>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8.21436" cy="8.54761" r="7" transform="rotate(90 8.21436 8.54761)"
+                                    stroke="white" stroke-width="1.30637" />
                             </svg>
                         </div>
                         <div class="theme">
@@ -82,8 +110,10 @@
                     </div>
                     <div class="icon3">
                         <div class="icon2-content">
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="8.21436" cy="8.54761" r="7" transform="rotate(90 8.21436 8.54761)" stroke="white" stroke-width="1.30637"/>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8.21436" cy="8.54761" r="7" transform="rotate(90 8.21436 8.54761)"
+                                    stroke="white" stroke-width="1.30637" />
                             </svg>
                         </div>
                         <div class="theme">
@@ -95,9 +125,9 @@
         </div>
     </section>
 
-    <!-- Section 4 -->
-    <section class="section4">
-        <div class="section4-content">
+    <!-- System Requirements -->
+    <section class="system" id="system">
+        <div class="system-content">
             <div class="head">
                 <p> Can My Computer Run this Game? </p>
             </div>
@@ -133,7 +163,7 @@
     </section>
 
     <!-- Top Scores -->
-    <section class="score">
+    <section class="score" id="score">
         <div class="score-content">
             <div class="left">
                 <h1> Top Scores </h1>
@@ -150,8 +180,11 @@
                             <h1> Evan Lathi </h1>
                             <p> PC Gamer </p>
                         </div>
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="twitter">
-                            <path opacity="0.3" d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z" fill="white"/>
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="twitter">
+                            <path opacity="0.3"
+                                d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                fill="white" />
                         </svg>
                     </div>
                     <div class="body">
@@ -163,11 +196,14 @@
                     <div class="head">
                         <img src="assets/profile2.png" alt="Profile1">
                         <div class="head-content">
-                            <h1> Jada Griffin  </h1>
+                            <h1> Jada Griffin </h1>
                             <p> Nerdreactor </p>
                         </div>
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="twitter">
-                            <path opacity="0.3" d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z" fill="white"/>
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="twitter">
+                            <path opacity="0.3"
+                                d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                fill="white" />
                         </svg>
                     </div>
                     <div class="body">
@@ -182,8 +218,11 @@
                             <h1> Aaron Williams </h1>
                             <p> Uproxx </p>
                         </div>
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="twitter">
-                            <path opacity="0.3" d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z" fill="white"/>
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="twitter">
+                            <path opacity="0.3"
+                                d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                fill="white" />
                         </svg>
                     </div>
                     <div class="body">
@@ -196,14 +235,63 @@
     </section>
 
     <!-- News Later Subscribe -->
-    <section class="letter">
+    <section class="letter" id="letter">
         <div class="letter-content">
             <div class="left">
-                
+                <img src="assets/newslater.png" alt="Newslater Image">
             </div>
-            <div class="right"></div>
+            <div class="right">
+                <h3> Want to stay in touch? </h3>
+                <h1> Newsletter Subscribe </h1>
+                <p> In order to start receiving our news, all you have to do is enter your email address.
+                    Everything else will be taken care of by us. We will send you emails containing information about
+                    game.
+                    We don't spam. </p>
+                <div class="subscribe-form">
+                    <form class="email">
+                        <label for="email"> Your email address </label>
+                        <input type="email" id="email" name="email" placeholder="youremail@binar.co.id" required />
+                    </form>
+                    <div class="btn-subs">
+                        <button class="title">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <section>
+            <ul class="footer-content">
+                <li class="footer-link"><a href="#main">Main</a></li>
+                <li class="footer-link"><a href="#about">About</a></li>
+                <li class="footer-link"><a href="#game-features">Game Features</a></li>
+                <li class="footer-link"><a href="#system">System Requirements</a></li>
+                <li class="footer-link"><a href="#quotes">Quotes</a></li>
+                <li><a href="" class='bx bxl-facebook'></a></li>
+                <li><a href="" class='bx bxl-twitter'></a></li>
+                <li><a href="" class='bx bxl-youtube'></a></li>
+                <li><a href="" class='bx bx-message-dots'></a></li>
+            </ul>
+            <svg width="1100" height="2" viewBox="0 0 1200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M1.22388 0.806396L1199.05 0.806501" stroke="white" stroke-width="0.873968"
+                    stroke-linecap="round" />
+            </svg>
+            <hr />
+        </section>
+        <section class="section-bottom">
+            <p class="copyright">
+                © 2018 Your Games, Inc. All Rights Reserved
+            </p>
+            <p class="privacy-policy">
+                Privacy Policy | Terms of Services | Code of Conduct
+            </p>
+        </section>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
