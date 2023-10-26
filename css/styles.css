@@ -30,6 +30,10 @@
   letter-spacing: 2.4px;
 }
 
+#menu-icon {
+  display: none;
+}
+
 .nav-links a {
   display: inline-block;
   padding: 10px 20px;
@@ -172,6 +176,10 @@ h3 {
   padding-top: 10rem;
 }
 
+.section-3 .content {
+  width: 35%;
+}
+
 .bullet {
   position: relative;
   min-width: 1rem;
@@ -199,7 +207,7 @@ h3 {
 
 .features::before {
   position: absolute;
-  background-color: #c8c8c8;
+  background-color: white;
   width: 0.125rem;
   height: calc(100% - 1rem);
   top: 0.5rem;
@@ -246,6 +254,7 @@ h3 {
   height: 100vh;
   padding: 7rem;
   display: flex;
+  overflow: hidden;
 }
 
 .quotes {
