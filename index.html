@@ -7,6 +7,8 @@
   <title>Web Responsive</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -17,12 +19,13 @@
     <div class="navbar-nav">
       <a href="#home">HOME</a>
       <a href="#galery">WORK</a>
-      <a href="#kontak">CONTACT</a>
-      <a href="#about">ABOUT ME</a>
+      <a href="#subcribe">CONTACT</a>
+      <a href="#scores">ABOUT ME</a>
     </div>
     <div class="navbar-extra">
       <a href="#signup">SIGN UP</a>
       <a href="#login">LOGIN</i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i> </a>
     </div>
   </nav>
 
@@ -116,19 +119,114 @@
       <div class="card1">
         <div class="header-card">
           <img src="./assets/image 8.jpg" alt="">
-          <p>Evan Lathi</p>
+          <div class="name-card">
+            <h1>Evan Lathi</h1>
+            <p>PC Gamer</p>
+          </div>
+          <a><i data-feather="twitter"></i></a>
+        </div>
+        <div class="card-text">
+          <h3>“One of my gaming highlights of the year.”</h3>
+          <p>June 18, 2021</p>
         </div>
       </div>
       <div class="card2">
-        <p>anskasa</p>
+        <div class="header-card">
+          <img src="./assets/image.jpg" alt="">
+          <div class="name-card">
+            <h1>Jada Griffin</h1>
+            <p>Nerdreactor</p>
+          </div>
+          <a><i data-feather="twitter"></i></a>
+        </div>
+        <div class="card-text">
+          <h3>“The next big thing in the world of streaming and survival games.”
+          </h3>
+          <p>July 10, 2021</p>
+        </div>
       </div>
       <div class="card3">
-        <P>SMASML</P>
+        <div class="header-card">
+          <img src="./assets/image (1).jpg" alt="">
+          <div class="name-card">
+            <h1>Aaron Williams</h1>
+            <p>Uproxx</p>
+          </div>
+          <a><i data-feather="twitter"></i></a>
+        </div>
+        <div class="card-text">
+          <h3>“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</h3>
+          <p>December 24, 2018</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Subscribe -->
+  <section class="subcribe" id="subcribe">
+    <div class="subcribe-content">
+      <div class="img">
+        <img src="assets/image.png" alt="Newslater Image">
+      </div>
+      <div class="text-subcribe">
+        <h3> Want to stay in</h3>
+        <h3>touch?</h3>
+        <h1> Newsletter Subscribe </h1>
+        <p> In order to start receiving our news, all you have to do is enter your email address.
+          Everything else will be taken care of by us. We will send you emails containing information about
+          game.
+          We don't spam. </p>
+        <div class="subscribe-form">
+          <form class="email">
+            <label for="email"> Your email address </label>
+            <input type="email" id="email" name="email" placeholder="youremail@binar.co.id" required />
+          </form>
+          <div class="btn-subs">
+            <button class="title">
+              <a href="">Subscribe Now</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <section>
+      <ul class="footer-content">
+        <li class="footer-link"><a href="#main">Main</a></li>
+        <li class="footer-link"><a href="#about">About</a></li>
+        <li class="footer-link"><a href="#game-features">Game Features</a></li>
+        <li class="footer-link"><a href="#system">System Requirements</a></li>
+        <li class="footer-link"><a href="#quotes">Quotes</a></li>
+        <li><a href="" class='bx bxl-facebook'></a></li>
+        <li><a href="" class='bx bxl-twitter'></a></li>
+        <li><a href="" class='bx bxl-youtube'></a></li>
+        <li><a href="" class='bx bx-message-dots'></a></li>
+      </ul>
+      <svg width="1100" height="2" viewBox="0 0 1200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5" d="M1.22388 0.806396L1199.05 0.806501" stroke="white" stroke-width="0.873968"
+          stroke-linecap="round" />
+      </svg>
+      <hr />
+    </section>
+    <section class="section-bottom">
+      <p class="copyright">
+        © 2018 Your Games, Inc. All Rights Reserved
+      </p>
+      <p class="privacy-policy">
+        Privacy Policy | Terms of Services | Code of Conduct
+      </p>
+    </section>
+  </footer>
+
+
+
+  <script>
+    feather.replace()
+  </script>
+  <script src="script.js"></script>
 </body>
 
 
