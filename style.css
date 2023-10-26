@@ -53,10 +53,9 @@
 
 .landing-page {
     background-image: url('assets/Group\ 1.jpg');
-    /* Ganti 'gambar.jpg' dengan URL gambar latar belakang Anda */
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    justify-content: space-between;
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
@@ -64,7 +63,6 @@
 
 .play-button {
     background-color: #ffd322;
-    /* Warna latar belakang tombol */
     color: black;
     padding: 15px 30px;
     font-size: 24px;
@@ -102,6 +100,7 @@
     background-image: url('assets/bg\ image\ 2.jpg');
     background-size: cover;
     display: flex;
+    justify-content: space-between;
     background-position: center;
     height: 100vh;
     text-align: center;
@@ -113,7 +112,6 @@
 .container-2 {
     display: flex;
     height: 100vh;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     margin-left: 60px;
@@ -121,7 +119,6 @@
 
 .container-2 h3 {
     font-size: 24px;
-    /* margin-top: 20px; */
 }
 
 .container-2 h1 {
@@ -132,10 +129,48 @@
     width: 700px;
     float: left;
     margin-right: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .img-container {
     margin-left: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        color: black;
+    }
+
+    .landing-page {
+        background-image: url('assets/Group\ 1.jpg');
+        background-size: cover;
+        background-position: center;
+        justify-content: space-between;
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .second-page {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .third-page {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .fourth-page {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sixth-page {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -156,14 +191,14 @@
 .container-3 {
     display: flex;
     align-items: center;
+    text-align: left;
     right: 900px;
     margin-bottom: 200px;
-    margin-left: 600px;
+    margin-left: 700px;
 }
 
 .container-3 h3 {
     font-size: 24px;
-    /* margin-top: 20px; */
 }
 
 .container-3 h1 {
@@ -226,34 +261,34 @@
     font-size: 40px;
 }
 
-.requirement{
+.requirement {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin-top: 87px;
-  }
-  
-  .title {
+}
+
+.title {
     margin-bottom: 10px;
-  }
-  
-  .table-card-container {
+}
+
+.table-card-container {
     display: flex;
-  }
-  
-  .table-card {
+}
+
+.table-card {
     border: 1px solid rgb(212, 103, 7);
     width: 100%;
     padding: 15px 20px;
-  }
-  
-  .page-requirements__table-card-bottom {
+}
+
+.page-requirements__table-card-bottom {
     border: 1px solid rgb(212, 103, 7);
     width: 642px;
     padding: 15px 20px;
-  }
+}
 
-  .fifth-page {
+.fifth-page {
     background-image: url('assets/bg\ image\ 5.jpg');
     background-size: cover;
     display: flex;
@@ -262,15 +297,136 @@
     text-align: center;
     justify-content: center;
     color: white;
-  }
+}
 
-  .container-5 {
+header {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-right: 200px;
+
+}
+
+main {
+    max-width: 960px;
+    margin-top: 100px;
+}
+
+.scores {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.scores li {
     display: flex;
-    height: 100vh;
-    /* flex-direction: column; */
     align-items: center;
+}
+
+.scores li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.scores li .score-content {
+    margin-left: 20px;
+}
+
+.scores li .score-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.scores li .score-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.card {
+    background-color: #FFFFFF14;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sixth-page {
+    background-color: rgb(11, 10, 10);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
     justify-content: center;
-    margin-left: 60px;
-    font-family: Arial;
-    font-weight: 300;
-  }
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 50px 0;
+}
+
+.container-6 {
+    max-width: 960px;
+    margin-left: 200px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sixth-page h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sixth-page p {
+    max-width: 500px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sixth-page form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sixth-page input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.sixth-page button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.input-1 {
+    display: flex;
+    margin: auto 0;
+}
+
+.footer {
+    background: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0%;
+    right: 0%;
+    bottom: -0.03%;
+    top: 90.66%;
+
+}
+
+.social-icons {
+    list-style: none;
+    margin: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+}
