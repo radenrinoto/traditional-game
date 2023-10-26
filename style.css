@@ -314,76 +314,525 @@ a {
     margin-left: 50px;
 }
 
-.box-content {
-    width: 220px;
-    height: 190px;
+.box-wrapper {
+    margin-top: 25px;
+    max-width: 50%;
+    margin-left: 25px;
+}
+
+.box-double {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
-.box h2 {
+.box-content {
+    width: 50%;
+    border: 1px solid #979797;
+    padding: 15px 15px 22px 15px;
+}
+
+.box-content h2 {
     color: #FFB548;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+  .box-content p {
+    color: white;
+    font-family: Open 'Sans';
+    margin-top: 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
 }
 
-.box p {
-    color: white;
+.box-single {
+    padding: 2rem 0;
+    border: 1px solid #979797;
+    padding: 15px 15px 22px 15px;
+  }
+  
+.box-single h2 {
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
 }
+  
+  .box-single p {
+    color: white;
+    margin-top: 5px;
+    font-family: Open 'Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+    max-width: 400.306px;
+  }
 
 /* TOP SCORES */
 .bg-5 {
     background-image: url(assets/background/bg\ image\ 5.png);
 }
 
-.scores-left {
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-    max-width: 40%;
-    margin-left: 100px;
+.quotes-container {
+    background-color: black;
+    height: 120vh;
+    width: 100%;
+  }
+
+.top-score-container {
+    margin: auto;
+    padding: 5rem 1rem;
 }
 
-.scores-right {
+.quotes-wrapper{
+    height: 100%;
+    display: flex;
+}
+  
+.card-wrapper{
     display: flex;
     flex-direction: column;
-    flex: 6;
-    max-width: 60%;
+    gap: 5px;
 }
-
-.scores-left h1 {
+  
+.card-quotes {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    width: 452px;
+    height: max-content;
+    padding: 12px;
+}
+.card-one {
+    margin-left: 8rem;
+}
+.card-quotes p {
     color: white;
-    font-size: 40px;
-    line-height: 64px;
-    letter-spacing: 3px;
-    margin-top: 400px;
-    margin-bottom: 20px;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+.card-quotes h6 {
+    color: white;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+    margin-top: 16px;
+}
+.card-quotes h1 {
+    color: #FFB548;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+.card-quotes img {
+    border-radius: 50%;
+
+}
+.card-quotes h2 {
+    color: white;
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 0.5;
+}
+  
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.card-profile {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+  
+.avatar-wrapper {
+    background: #FFB548;
+    border-radius: 50%;
+    padding-right: 5px;
+    width: max-content;
+    height: max-content;
+}
+  
+.left-section-quotes {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+  }
+.left-section-quotes h1 {
+    color: white;
+    font-family: Arial;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
-.scores-left p {
+.right-section-quotes {
+    margin-top: -20px;
+}
+
+.left-section-quotes p {
     color: white;
     font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 12px;
+}
+.left-section-quotes a {
+    color: #1a1917;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+    background-color: #f3af34;
+    padding: 15px 70px;
+    border-radius: 4px;
+    margin-top: 2rem;
 }
 
-.scores-left a {
-    background-color: #FFB548;
-    color: black;
+
+/* SUBSCRIBE */
+.subcribe-container {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+  
+.subscribe-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 5rem;
+}
+  
+.content-subscribe h3 {
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    max-width: 30%;
+}
+
+.content-subscribe h1 {
+    color: white;
+    font-family: Arial;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.content-subscribe p {
+    color: white;
+    font-family: Open 'Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+    max-width: 80%;
+    margin-top: 1.3rem;
+}
+.content-subscribe form {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 10px;
+}
+.content-subscribe form button {
+    border-radius: 4px;
+    background: linear-gradient(195deg, #FFB548 11.27%, #f3af34 90.4%);
+    color: #1a1917;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 50px;
+}
+  
+.content-subscribe input {
     border-radius: 5px;
-    margin-top: 30px;
-    width: 150px;
-    height: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+    width: 366px;
+    padding: 0 1rem;
+    color: #FFB548;
 }
 
-.card {
-    padding: 12px;
-    width: 290px;
-    height: 130px;
-    border-radius: 10px;
-    background: #FFFFFF14;
+/* FOOTER */
+footer {
+    background-color: black;
+}
+  
+.sosmed_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.sosmed_links img {
+    display: flex;
+    gap: 40px;
+}
+
+  
+.top-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: max-content;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+.sosmed-link a {
+    color: white;
+    font-family: Open 'Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+  
+.footer-wrapper hr {
+    margin: 20px 0;
+    border: 1px solid gray;
+}
+
+.bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.bottom-wrapper h5 {
+    color: white;
+    font-family: Open 'Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+  
+.bottom-wrapper h4 {
+    color: white;
+    text-align: right;
+    font-family: Open 'Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 490px) {
+    .nav {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .bg-1 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .slide-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .quotes-container {
+        width: 100%;
+    }
+
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+      
+    .card-quotes {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.08);
+        width: 150px;
+        height: max-content;
+        padding: 4px;
+    }
+    .card-one {
+        margin-left: 3rem;
+    }
+    .card-quotes p {
+        color: white;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    .card-quotes h6 {
+        color: white;
+        font-family: Open Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+        margin-top: 5px;
+    }
+    .card-quotes h1 {
+        color: #FFB548;
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+    .card-quotes img {
+        border-radius: 50%;
+    
+    }
+    .card-quotes h2 {
+        color: white;
+        text-align: justify;
+        font-family: Open Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        opacity: 0.5;
+    }
+      
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .card-profile {
+        display: flex;
+        gap: 0.4rem;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .avatar-wrapper {
+        background: #FFB548;
+        border-radius: 50%;
+        padding-right: 2px;
+        width: max-content;
+        height: max-content;
+    }
+      
+    .left-section-quotes {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: start;
+      }
+    .left-section-quotes h1 {
+        color: white;
+        font-family: Arial;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .right-section-quotes {
+        margin-top: -10px;
+    }
+    
+    .left-section-quotes p {
+        color: white;
+        font-size: 16px;
+    }
+    .left-section-quotes a {
+        color: #1a1917;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: lowercase;
+        padding: 4px 16px;
+        border-radius: 4px;
+        margin-top: 0.4rem;
+    }
+
+    .top-score-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-section-quotes {
+        display: flex;
+    }
+
+    .subscribe-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
