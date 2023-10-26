@@ -1,11 +1,30 @@
 /* responsive */
-@media screen and (max-width: 768px){
+
+
+/* navbar responsive  */
+
+
+@media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5.625rem;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2rem;
+    }
     .navbar-menu{
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: rgba(0, 0, 0, 0.7);
         position: absolute;
-        top: 60px;
+        top: 90px;
         left: 0;
         width: 100%;
         padding: 0;
@@ -23,5 +42,412 @@
 
     .navbar-hamburger {
         display: flex;
+    }
+    .navbar-logo a{
+        font-size: 1.2rem;
+    }
+    .navbar-actions{
+        gap: 4rem;
+        margin: 0 4rem;
+        align-items: center;
+    }
+
+    .pages-1{
+        padding-top: 20rem;
+        height: 100vh;
+        display: flex;
+    }
+    .pages-1-title{
+        font-size: 2.5rem;
+    }
+    .pages-1-sub-title{
+        padding: 30px 0 ;
+        font-size: 1rem;
+    }
+
+    .pages-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .pages-2-left {
+        margin-top: 5rem;
+    }
+    .slider-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .slide img {
+        max-width: 100%; /* Gambar akan mengikuti lebar parent (100%) */
+        height: auto; 
+    }
+
+    .pages-3 {
+        background-position: 25% 75%;
+        height: 100vh;
+      }
+    
+      .pages-3-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 50%;
+        float: right;
+        margin-right: 1rem;
+        margin-top: 11rem;
+      }
+    
+      .pages-3-timeline::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 9.5rem;
+        background: white;
+        left: 3px;
+        margin-top: 0.25rem;
+      }
+      
+      .pages-3-timeline-desc {
+        color: #FFF;
+        text-align: justify;
+        font-family: Open Sans;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.375rem;
+        width: 15rem;
+      }
+
+      .pages-4 {
+        background-position: 70% 50%;
+        height: fit-content;
+        padding-bottom: 1rem;
+        flex-shrink: 0;
+      }
+      
+      .pages-4-system-requirement {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        gap: 4rem;
+        margin-left: 1rem;
+      }
+      
+      .pages-4-system-requirement-title {
+        display: flex;
+        width: 100%;
+        height: 4.60269rem;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Arial;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.1875rem;
+        text-transform: uppercase;
+      }
+      
+      .pages-4-system-requirement-box {
+        display: grid;
+        grid-template-areas: 'col-1'
+        'col-2'
+        'col-3'
+        'col-4'
+        'col-5';
+        padding: 10px;
+        width: 42%;
+      }
+
+      .pages-5-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 100%;
+      }
+    
+      .pages-5-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        flex-direction: column;
+        color: #FFF;
+        font-family: Arial;
+        width: 20rem;
+        gap: 1.5rem;
+        margin-top: 40rem;
+      }
+      
+      .pages-5-left-title {
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.1875rem;
+        text-transform: uppercase;
+      }
+      
+      .pages-5-left-desc {
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.1875rem;
+        text-transform: capitalize;
+        text-align: center;
+      }
+      
+      .pages-5-left-button {
+        width: 16.27263rem;
+        height: 3.75rem;
+        border-radius: 0.25rem;
+        background: linear-gradient(181deg, #FFB548 0%, #F3AF34 99.52%);
+        color: #1A1917;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: lowercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .pages-5-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-left: 1rem;
+      }
+      
+      .pages-5-right {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .pages-5-mobile-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        height: 15;
+        border-radius: 0.625rem;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 10px;
+        margin-bottom: 1rem;
+      }
+      
+      .pages-5-mobile-card-2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        height: 15;
+        border-radius: 0.625rem;
+        background: rgba(255, 255, 255, 0.08);
+        margin-left: 0;
+        padding: 10px;
+        margin-bottom: 1rem;
+      }
+      
+      .pages-5-mobile-card-3 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        height: 15;
+        border-radius: 0.625rem;
+        background: rgba(255, 255, 255, 0.08);
+        margin-left: 0;
+        padding: 10px;
+      }
+    
+      .pages-5-mobile-card-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      
+      .ages-5-mobile-card-headers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      .pages-5-mobile-card-profile {
+        width: 4rem;
+        height: 4rem;
+        flex-shrink: 0;
+        border-radius: 999px;
+        box-shadow: 7px 1px 0px 0px rgba(255,180,73,0.75);
+        -webkit-box-shadow: 7px 1px 0px 0px rgba(255,180,73,0.75);
+        -moz-box-shadow: 7px 1px 0px 0px rgba(255,180,73,0.75);
+      }
+      
+      .pages-5-mobile-card-header-title {
+        color: #FFB548;
+        font-family: Arial;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.125rem;
+      }
+      
+      .pages-5-mobile-card-job {
+        color: #FFF;
+        text-align: justify;
+        font-family: Open Sans;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.375rem;
+        opacity: 0.5;
+      }
+      
+      .pages-5-mobile-card-body {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px;
+      }
+      
+      .pages-5-mobile-card-footer {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+        padding: 10px;
+      }
+
+      ul li{
+        list-style: none;
+      }
+
+
+      .pages-6 {
+        margin-top: -0.125rem;
+        height: 60rem;
+        background-position: 25% 45%;
+      }
+
+      .pages-6-left img{
+        /* width: 100px; */
+        display: none;
+      }
+    
+      .pages-6-right{
+        margin-top: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-left: 0rem;
+        padding-top: 13rem;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    
+      .pages-6-right-text1 {
+        color: #FFF;
+        font-family: Arial;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.125rem;
+      }
+      
+      .pages-6-right-title {
+        width: 100%;
+        color: #FFF;
+        font-family: Arial;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.1875rem;
+        text-transform: uppercase;
+      }
+      
+      .pages-6-right-desc {
+        width: 100%;
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.375rem;
+      }
+    
+      footer {
+        background-color: #080B0A;
+        padding: 0 5rem 5rem 5rem;
+        margin-top: 0rem;
+      }
+    
+      footer .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+        gap: 2rem;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+      }
+      
+      footer .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-family: Open Sans;
+        color: #FFF;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+        margin-top: 1.75rem;
+      }
+      
+      footer .bottom .left {
+        opacity: 0.5;
+    }
+
+    .first{
+        margin-top: 1rem;
     }
 }
