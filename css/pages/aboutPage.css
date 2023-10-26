@@ -7,24 +7,44 @@
   justify-content: center;
   align-items: center;
   height: 987px;
+  padding: 0 10px;
 }
 
 .page-about__container {
   display: flex;
+  flex-direction: column;
   color: white;
 }
 
 .page-about__left-title {
   font-weight: 600;
-  font-size: 56px;
+  font-size: 40px;
 }
 
 .page-about__left-desc {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 .page-about__right {
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-about__left-title {
+    font-size: 56px;
+  }
+  .page-about__left-desc {
+    font-size: 24px;
+  }
+  .page-about__right {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-about__container {
+    flex-direction: row;
+  }
 }

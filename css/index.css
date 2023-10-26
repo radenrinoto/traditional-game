@@ -28,13 +28,13 @@ html {
 }
 
 .title {
-  font-size: 56px;
+  font-size: 30px;
   font-weight: 400;
   color: white;
 }
 
 .desc {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
 }
@@ -49,4 +49,17 @@ html {
   font-weight: 400;
   font-size: 15px;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 56px;
+  }
+
+  .desc {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
 }

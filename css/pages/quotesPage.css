@@ -6,9 +6,10 @@
   margin-left: 0px;
   height: 960px;
   width: 100%;
-  padding: 0 120px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -17,22 +18,22 @@
   flex-direction: column;
   gap: 30px;
 }
+
 .page-quotes__right {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .page-quotes__card-quotes {
-  width: 452px;
+  width: 100%;
   padding: 15px;
   border-radius: 10px;
   background-color: rgb(49, 49, 49);
 }
 
 .page-quotes__card-quotes-middle {
-  margin-right: 200px;
-  width: 452px;
+  width: 100%;
   padding: 15px;
   border-radius: 10px;
   background-color: rgb(49, 49, 49);
@@ -67,4 +68,39 @@
 .page-quotes__date {
   color: gray;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-quotes {
+    padding: 0 50px;
+  }
+  .page-quotes__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-quotes {
+    padding: 0 130px;
+    flex-direction: row;
+  }
+  .page-quotes__right {
+    width: 60%;
+  }
+  .page-quotes__card-quotes {
+    width: 452px;
+    margin-left: 90px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 49);
+  }
+  .page-quotes__card-quotes-middle {
+    margin-right: 200px;
+    width: 452px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 49);
+  }
 }

@@ -16,17 +16,35 @@
 }
 
 .page-landing__head-title {
-  font-size: 72px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
 .page-landing__head-desc {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 
 .page-landing__head-scroll-container {
   cursor: pointer;
-  margin-top: 200px;
+  margin-top: 90px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .page-landing__head-title {
+    font-size: 72px;
+  }
+  .page-landing__head-desc {
+    font-size: 24px;
+  }
+  .page-landing__head-scroll-container {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-landing__head-title {
+    font-size: 60px;
+  }
 }

@@ -2,19 +2,22 @@
   background: url("/assets/bg_newsletter_page.svg");
   height: fit-content;
   width: 100%;
-  padding: 50px 100px;
+  padding: 50px 20px;
 }
 
 .page-footer__links {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
   color: white;
   margin-bottom: 40px;
 }
 
 .page-footer__link-list {
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .page-footer__link {
@@ -24,6 +27,7 @@
 
 .page-footer__credits {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -31,4 +35,22 @@
 .page-footer__credit {
   font-weight: 200;
   color: gray;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__link-list {
+    gap: 50px;
+  }
+  .page-footer__credits {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-footer {
+    padding: 50px 100px;
+  }
+  .page-footer__links {
+    flex-direction: row;
+  }
 }

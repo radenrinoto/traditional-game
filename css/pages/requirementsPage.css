@@ -14,13 +14,17 @@
 
 .page-requirements__container {
   margin-top: 50px;
-  padding-left: 130px;
+  padding: 0 20px;
+}
+
+.page-requirements__title {
+  width: 100%;
 }
 
 .page-requirements__table {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 100%;
   margin-top: 87px;
 }
 
@@ -30,6 +34,7 @@
 
 .page-requirements__table-card-container {
   display: flex;
+  flex-direction: column;
 }
 
 .page-requirements__table-card {
@@ -42,4 +47,41 @@
   border: 1px solid white;
   width: 100%;
   padding: 15px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-requirements__container {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .page-requirements__table {
+    width: 60%;
+    margin-top: 50px;
+  }
+  .page-requirements__table-card-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-requirements__container {
+    margin-top: 50px;
+    padding-left: 130px;
+  }
+  .page-requirements__table {
+    width: 60%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .page-requirements__container {
+    margin-top: 50px;
+    padding-left: 130px;
+  }
+  .page-requirements__table {
+    width: 40%;
+    margin-top: 50px;
+  }
 }

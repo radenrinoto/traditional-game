@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <!-- GLOBAL -->
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="css/components/navbar.css" />
     <link rel="stylesheet" href="css/components/button.css" />
@@ -30,6 +34,8 @@
   <body>
     <nav class="navbar">
       <h1>LOGO</h1>
+      <i id="mediaButton" class="fa fa-bars ic-navbar" onclick="onToggle()"></i>
+      <!-- DESKTOP -->
       <div class="navbar-list">
         <a href="#home" class="navbar-list__link">HOME</a>
         <a href="#work" class="navbar-list__link">WORK</a>
@@ -39,6 +45,17 @@
       <div class="navbar-list">
         <a href="" class="navbar-list__link">SIGN UP</a>
         <a href="" class="navbar-list__link">LOGIN</a>
+      </div>
+      <!-- MOBILE -->
+      <div id="mainListDiv" class="navbar__container-mobile">
+        <div id="nav-mobile" class="navbar-list">
+          <a href="#home" class="navbar-list__link">HOME</a>
+          <a href="#work" class="navbar-list__link">WORK</a>
+          <a href="#feature" class="navbar-list__link">CONTACT</a>
+          <a href="#newsletter" class="navbar-list__link">ABOUT ME</a>
+          <a href="" class="navbar-list__link">SIGN UP</a>
+          <a href="" class="navbar-list__link">LOGIN</a>
+        </div>
       </div>
     </nav>
     <!-- LANDING PAGE -->
@@ -64,8 +81,8 @@
           <h3 class="page-about__left-desc">What's so special?</h3>
           <h1 class="page-about__left-title">THE GAMES</h1>
         </div>
+        <!-- IMAGE SLIDER -->
         <div class="page-about__right">
-          <!-- IMAGE SLIDER -->
           <div class="image-slider">
             <div
               id="prev_image_button"
@@ -73,7 +90,9 @@
               onclick="sliderImage(`prev_image_button`)"
             ></div>
             <div class="image__slide-container">
-              <img src="/assets/image_slider.svg" />
+              <div class="image__slide-img-src">
+                <img src="/assets/image_slider.svg" class="image__src" />
+              </div>
               <div class="image__round-container">
                 <div class="image__ic-round-fill"></div>
                 <div class="image__ic-round-outline"></div>
@@ -147,6 +166,7 @@
               </p>
             </div>
           </div>
+
           <!-- CARD CONTAINER -->
           <div class="page-requirements__table-card-container">
             <div class="page-requirements__table-card">
@@ -286,5 +306,6 @@
       </div>
     </div>
     <script src="js/slider.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
