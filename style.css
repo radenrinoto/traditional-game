@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 main {
     height: 100vh;
 }
@@ -664,3 +668,5 @@ q
     font-weight: 500;
     font-size: 12px;
 }
+
+

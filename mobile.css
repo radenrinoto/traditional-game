@@ -1,0 +1,300 @@
+/* =================================== responsive ====================================== */
+
+@media screen and (max-width: 700px) {
+
+
+    /*  ================== navbar ================ */
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .togle-button {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .bar-toggle {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+        background-color: rgba(0, 0, 0, 0.50);
+        align-items: center;
+        padding: 5px;
+        margin: 0;
+        -webkit-transition: all 0.6s ease-out;
+        -moz-transition: all 0.6s ease-out;
+        -o-transition: all 0.6s ease-out;
+        -ms-transition: all 0.6s ease-out;
+        transition: all 0.6s ease-out;
+
+        /* transform: translatey(-150%); */
+        transform: translateX(150%);
+    }
+
+    .show {
+        /* transform: translatey(0%); */
+        transform: translateX(0%);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-mobile li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .auth {
+        display: none;
+    }
+
+    .nav_link {
+        position: relative;
+    }
+
+    /*  ================== main-screen ================ */
+
+    .jumbo-tron .text-main {
+        font-size: 40px;
+    }
+
+
+    /*  ================== page-the-game ================ */
+    .content-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game-text {
+        /* margin: px 20px 120px 20px; */
+        justify-content: center;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .game-text h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    /* =================== page-features ================== */
+
+    .content-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .content-3 .feature-text .text-1 h1 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .content-3 .feature-text .text-1 p {
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        word-spacing: 2px;
+    }
+
+    /* ================= page-requirements */
+
+    .page-features {
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+    }
+
+    .title-req {
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 4px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .content-4 {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .req-item-1 {
+        grid-column: 1;
+        border: 0px;
+    }
+
+    .req-item-2 {
+        grid-column: 1;
+    }
+
+    .req-item-3 {
+        grid-column: 1;
+    }
+
+    .req-item-4 {
+        grid-column: 1;
+    }
+
+    .req-item-5 {
+        grid-column: 1;
+    }
+
+    .req-title {
+        color: #fab340;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: start;
+        margin: 5px;
+    }
+
+    .req-text {
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: start;
+    }
+
+    /* ==================== pages quotes ===================== */
+
+    .group-card {
+        padding: 15px;
+    }
+
+    .quotes {
+        height: auto;
+        padding: 10px;
+    }
+
+    .content-5 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qts-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-qts {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title-qts {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .card-1 {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .card-2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .username {
+        color: #fab340;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .pp-1 {
+        width: 50px;
+    }
+
+    .pp-2 {
+        width: 50px;
+    }
+
+    .pp-3 {
+        width: 50px;
+    }
+
+    /* ================ pages newslater =============== */
+
+    .news {
+        padding: 10px;
+    }
+
+    .news-text-1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .news-title {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .news-text-2 {
+        font-size: 16px;
+        text-align: start;
+        word-spacing: 1px;
+        padding: 10px;
+        font-weight: 500;
+    }
+
+    .group-btn-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .group-btn-news .btn {
+        margin: 10px;
+    }
+
+    /* ========= foooter ============ */
+
+    .footer {
+        height: auto;
+    }
+
+    .foot-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .cpy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 10px;
+    }
+}
